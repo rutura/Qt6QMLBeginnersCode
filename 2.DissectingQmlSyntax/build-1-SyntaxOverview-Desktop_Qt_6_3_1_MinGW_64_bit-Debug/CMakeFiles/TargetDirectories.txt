@@ -1,0 +1,12 @@
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview_qmltyperegistration.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/all_qmltyperegistrations.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview_other_files.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview_qmllint.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/all_qmllint.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview_tooling.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview_qmlimportscan.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview_autogen_timestamp_deps.dir
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/app1-SyntaxOverview_autogen.dir

@@ -1,0 +1,12 @@
+-rootPath
+F:/OnlineCourses/Qt6QMLForBeginners/3.BasicElements/3-CustomComponents
+-cmake-output
+-output-file
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-CustomComponents-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_app3-CustomComponents.cmake
+-importPath
+C:/Qt/6.3.1/mingw_64/./qml
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-CustomComponents-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/3-CustomComponents
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-CustomComponents-Desktop_Qt_6_3_1_MinGW_64_bit-Debug
+-qrcFiles
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-CustomComponents-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.rcc/qmake_3-CustomComponents.qrc
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-CustomComponents-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.rcc/app3-CustomComponents_raw_qml_0.qrc

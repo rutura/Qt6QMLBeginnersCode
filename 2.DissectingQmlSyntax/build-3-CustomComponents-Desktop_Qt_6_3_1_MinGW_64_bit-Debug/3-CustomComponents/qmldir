@@ -1,0 +1,5 @@
+module 3-CustomComponents
+typeinfo app3-CustomComponents.qmltypes
+prefer :/3-CustomComponents/
+MButton 1.0 MButton.qml
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+<course>
+  <instructor>Matt Kabwe</instructor>
+  <year>2002</year>
+  <coursename  hot ="true">Operating Systems</coursename >
+</course>
+<course>
+  <instructor>Daniel Gwo</instructor>
+  <year>2010</year>
+  <coursename hot = "false">Object Oriented Programming (Java)</coursename >
+</course>
+<course>
+  <instructor>Nathan Mepp</instructor>
+  <year>2011</year>
+  <coursename hot = "false">Embedded Systems</coursename >
+</course>
+<course >
+  <instructor>Lilian Gwiza</instructor>
+  <year>2015</year>
+  <coursename hot = "false">IT Project Management</coursename >
+</course>
+<course>
+  <instructor>Matt Kabwe</instructor>
+  <year>2002</year>
+  <coursename hot = "true">Operating Systems</coursename >
+</course>
+</courses>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/3-CustomComponents">
+    <file alias="qmldir">F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-CustomComponents-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/3-CustomComponents/qmldir</file>
+  </qresource>
+</RCC>
+

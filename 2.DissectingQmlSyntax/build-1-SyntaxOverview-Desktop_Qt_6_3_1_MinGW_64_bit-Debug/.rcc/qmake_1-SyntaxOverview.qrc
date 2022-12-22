@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/1-SyntaxOverview">
+    <file alias="qmldir">F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/1-SyntaxOverview/qmldir</file>
+  </qresource>
+</RCC>
+
