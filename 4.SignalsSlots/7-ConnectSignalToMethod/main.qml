@@ -42,7 +42,7 @@ Window {
         }
         */
 
-        //We want to connect, not to a build in signal handler, but to a custom
+        //We want to connect, not to a built in signal handler, but to a custom
         //regular function
         function respond_your_way(message){
             console.log("Responding our way;Greeting with message : "+ message)

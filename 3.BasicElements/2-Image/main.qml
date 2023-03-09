@@ -3,6 +3,12 @@
         . Exploring the Image element
         . Different ways to load images :
             . from working directory
+                . Working directory is where your binary is built :
+                    for example :
+                        F:\OnlineCourses\Qt6QMLForBeginners\3.BasicElements\build-2-Image-Desktop_Qt_6_3_1_MinGW_64_bit-Debug
+
+                . You can find that in Qt Creator by going to Projects-> Kit -> Run
+
             . from resource file
             . from full path on the local file system
             . from web url path
@@ -30,13 +36,12 @@ Window {
         width: 600
         height: 300
 
-        //Load image from working directory
         Image {
             x : 10
             y : 150
             width: 100
             height: 100
-            //Load image from the working directory
+            //Loading image from the working directory
             source: "file:LearnQt.png"
         }
 
@@ -51,7 +56,6 @@ Window {
         }
 
         //Load image from a full path
-
         Image {
             x : 300
             y : 150

@@ -49,6 +49,8 @@ Window {
         MouseArea {
             anchors.fill: parent
             onClicked: {
+              //redRectId.height = 100 // Doesn't work
+              // width * 1.5          // Doesn't work either
               redRectId.height = Qt.binding(function(){
                 return redRectId.width * 2
               })

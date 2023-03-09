@@ -63,7 +63,8 @@ Window {
 
 
 
-    /*
+
+/*
     Row {
         anchors.centerIn: parent
 
@@ -76,12 +77,12 @@ Window {
             focus: true
 
             onFocusChanged: {
-                if ( focus === true)
-                {
-                    color = "gray"
-                }else
+                if ( focus)
                 {
                     color = "green"
+                }else
+                {
+                    color = "gray"
                 }
             }
 
@@ -98,12 +99,12 @@ Window {
             border.color: "black"
             color: "blue"
             onFocusChanged: {
-                if ( focus === true)
-                {
-                    color = "gray"
-                }else
+                if ( focus )
                 {
                     color = "blue"
+                }else
+                {
+                    color = "gray"
                 }
             }
 
@@ -115,4 +116,5 @@ Window {
         }
     }
     */
+
 }

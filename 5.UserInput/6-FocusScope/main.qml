@@ -8,7 +8,8 @@
                 in Item.
                 You should export width and height and also allow the user to set
                     the color
-            . If instantiate MButton(the external component) and try to give focus,
+
+            . If you instantiate MButton(the external component) and try to give focus,
                 the results are unpredicatable :
                     . If the first one is given focus explicitly, when the app
                         is run, it seems like neither has focus
@@ -38,8 +39,7 @@ Window {
 
     Column {
         MButton{
-           focus: true
-
+           //focus: true
         }
 
         MButton{
@@ -47,7 +47,6 @@ Window {
 
             color: "green"
         }
-
     }
 
 

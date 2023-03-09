@@ -10,6 +10,7 @@
               . For example, for MouseArea, we don'thave an
                 onClickedChanged signal, because clicked is a signal
                 not a property.
+              . But enabled is a property, so it has a changed signal
 
   */
 import QtQuick
@@ -32,7 +33,7 @@ Window {
         }
 
         onHeightChanged: function(){
-            console.log("Height changed to :"+ rect.width)
+            console.log("Height changed to :"+ rect.height)
         }
 
         onColorChanged: {
@@ -46,7 +47,7 @@ Window {
             anchors.fill: parent
             onClicked: {
                 rect.width = rect.width+20
-            }
+            } 
         }
     }
 }

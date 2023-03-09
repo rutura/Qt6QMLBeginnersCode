@@ -1,5 +1,6 @@
 /*
         . Exploring TextEdit
+                . Component to show multiple lines of editable text
                 . Steal the TextEdit code from the docs and use that as
                     a starting point
                  . Run without using rich text and show the effect
@@ -10,9 +11,13 @@
                  . Show a long piece of text : the text below
                  . The TextEdit will try to show that on one line
                  . Use the wrap property to make it wrap text to new lines
-                 . The text wraps but you can't see it all. We need some kind of scrolling
-                 . Meet the Flickable element which provides some flicking, swipping capabilities
-                 . Try to make this as fun as possible.
+                 . We can't see all the text
+                 . There are ways one can make the text scrollable but
+                    there are better tools like TextArea that make these
+                    this easier so we'll just stop here for TextEdit.
+
+
+
 
   */
 
@@ -25,19 +30,12 @@ Window {
     height: 480
     title: qsTr("TextEdit Demo")
 
-    Flickable {
-        id : mFlickableId
 
-        width : textInputId.width
-        contentHeight: textInputId.implicitHeight
-        height: 300
-        clip: true
-        anchors.centerIn: parent
 
         TextEdit {
             id : textInputId
-
             width: 240
+            anchors.centerIn: parent
 
             text: "<strong>Because</strong> we want to use our server locally, we set our domain name \r to be <font color = 'red' >localhost </font>. If we had set it up  to\n be something  else, we would have to go mess with the host files to resolve whatever we put in here to a recognizable network address. ustleaveinlocalhostitisgoodenoughforourlocalusepurposes. Leave the rest to defaults and hit continue. You are then given a choice for the database you want to use"
 
@@ -53,14 +51,12 @@ Window {
             }
         }
 
-    }
-
     Rectangle {
         id : mRectId
         width: 200
         height: 100
         color: "red"
-        anchors.top: mFlickableId.bottom
+        anchors.top: textInputId.bottom
         MouseArea{
             anchors.fill: parent
             onClicked: {
@@ -68,5 +64,6 @@ Window {
             }
         }
     }
+
 
 }

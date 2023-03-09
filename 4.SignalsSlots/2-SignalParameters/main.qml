@@ -36,13 +36,12 @@ Window {
         height: 150
         color : "red"
         anchors.left: parent.left
+
         MouseArea{
             anchors.fill: parent
-            //hoverEnabled: true
-
             /*
             onClicked: {
-                //Deprecated : Injection of parameters into signal handlers is deprecated. Use JavaScript functions with formal parameters instead warning
+                //Deprecated
                 console.log(mouse.x)
             }
             */
@@ -53,14 +52,14 @@ Window {
                 console.log(mouse.x)
             }
 
-
             /*
              //Arrow function
             onClicked: (mouse) => console.log(mouse.x)
             */
-
-
         }
+
+
+
     }
 
 

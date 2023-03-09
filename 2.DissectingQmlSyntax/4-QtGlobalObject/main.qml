@@ -48,7 +48,7 @@ Window {
                 Qt.openUrlExternally("https://www.learnqt.guide/udemy-discounted-9/")
 
                 //Open local files with default program
-                //Qt.openUrlExternally("file:///D:/artwork/LearnQt.png")
+                Qt.openUrlExternally("file:///D:/artwork/LearnQt.png")
 
                 //Capture platform info
                 console.log("The current platform is : "+Qt.platform.os)

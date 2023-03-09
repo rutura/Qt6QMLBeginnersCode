@@ -38,6 +38,8 @@ Window {
         height: 150
         color : "red"
         anchors.left: parent.left
+
+
         MouseArea{
             anchors.fill: parent
             //hoverEnabled: true

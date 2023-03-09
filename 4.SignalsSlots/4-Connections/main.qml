@@ -45,6 +45,5 @@ Window {
                 console.log("Doubleclicked at : "+mouse.x)
             }
         }
-
     }
 }

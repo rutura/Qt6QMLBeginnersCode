@@ -49,7 +49,5 @@ Window {
                 rectId.greet("The sky is blue")
             }
         }
-
-
     }
 }

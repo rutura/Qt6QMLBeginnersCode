@@ -43,6 +43,7 @@ Window {
             }
 
         }
+
         Rectangle {
             id : greenRectId
             width: 100; height: 100
@@ -71,6 +72,7 @@ Window {
             }
 
         }
+
         Rectangle {
             id : textRectId
             width: 100; height: 100
@@ -92,6 +94,7 @@ Window {
             }
 
         }
+
     }
 
 }

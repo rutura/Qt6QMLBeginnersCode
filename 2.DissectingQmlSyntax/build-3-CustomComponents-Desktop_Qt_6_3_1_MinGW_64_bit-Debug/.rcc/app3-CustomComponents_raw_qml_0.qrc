@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/3-CustomComponents/">
-    <file alias="main.qml">F:/OnlineCourses/Qt6QMLForBeginners/3.BasicElements/3-CustomComponents/main.qml</file>
-    <file alias="MButton.qml">F:/OnlineCourses/Qt6QMLForBeginners/3.BasicElements/3-CustomComponents/MButton.qml</file>
-  </qresource>
-</RCC>
-

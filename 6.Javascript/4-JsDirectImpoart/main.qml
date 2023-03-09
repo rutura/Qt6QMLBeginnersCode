@@ -36,10 +36,7 @@ Window {
             onClicked: {
                //console.log("Hello there")
                Utilities1.greeting()
-
             }
-
         }
     }
-
 }

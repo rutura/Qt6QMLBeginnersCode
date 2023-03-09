@@ -30,8 +30,6 @@
 import QtQuick
 import QtQuick.Window
 import "utilities1.js" as Utilities1
-
-
 Window {
     visible: true
     width: 640
@@ -54,11 +52,8 @@ Window {
             onClicked: {
                 //console.log("Our ages combined yield :" + Utilities1.combineAges(33,17))
                 // value = Utilities1.add(33,17) //Error
-
             }
-
         }
     }
-
 }
 

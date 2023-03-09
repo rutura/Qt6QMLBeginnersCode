@@ -1,3 +1,15 @@
+/*
+
+        Show the docs
+        Show from string to url
+        Click on var and start exploring : copy the types from the docs and play with them
+        End by working with font and date
+        Break the lecture in two parts :
+        Part1 : from string to url
+        Part2 : the rest
+
+  */
+
 import QtQuick
 
 

@@ -4,24 +4,27 @@
 
         . The signal is named on[Propertyname with first leter capitalized]changed
 
-        . Show the signal for existing properties in the app liek width and height.
+        . Show the signal for existing properties in the app like width and height.
 
   */
 
 import QtQuick
 
 Window {
+    id : rootId
     visible: true
     width: 640
     height: 480
     title: qsTr("Properties and Handlers Demo")
 
-    property string mFirstName: "Daniel"
-    onMFirstNameChanged: {
-        console.log("The firsname changed to :"+ mFirstName)
+    property string firstName: "Daniel"
+    onFirstNameChanged: {
+        console.log("The firsname changed to :"+ firstName)
     }
 
-
+    onTitleChanged: {
+        console.log("The new title is : " + rootId.title)
+    }
 
     Rectangle {
         width : 300
@@ -32,12 +35,15 @@ Window {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                mFirstName = "John"
-
+                firstName = "John"
+                rootId.title = "The sky is blue"
             }
+
         }
     }
+
+
     Component.onCompleted: {
-        console.log("The firstname is :"+mFirstName)
+        console.log("The firstname is :"+firstName)
     }
 }

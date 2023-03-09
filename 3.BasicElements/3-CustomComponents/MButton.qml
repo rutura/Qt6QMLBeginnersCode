@@ -1,6 +1,5 @@
 import QtQuick
 
-
 Item {
     id : rootId
     property alias buttonText: buttonTextId.text
@@ -21,6 +20,9 @@ Item {
             id : buttonTextId
             text : "Button"
             anchors.centerIn: parent
+            onTextChanged: {
+                console.log("Text changed to "+ buttonTextId.text)
+            }
         }
 
         MouseArea {

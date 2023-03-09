@@ -17,7 +17,4 @@ Window {
         color: "red"
         font.pointSize: 20
     }
-    Component.onCompleted: {
-        console.log("Component loaded")
-    }
 }

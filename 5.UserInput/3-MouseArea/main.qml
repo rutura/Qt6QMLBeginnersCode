@@ -71,13 +71,9 @@ Window {
             height: width
             color: "blue"
 
-
-
             onXChanged: {
                 console.log("X Coordinate is : "+ x)
-
             }
-
         }
 
         MouseArea{
