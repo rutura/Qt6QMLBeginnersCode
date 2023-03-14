@@ -14,7 +14,6 @@
         . Show the fillWidth and fillHeight props :
             .    Layout.fillWidth: true
                 Layout.fillHeight: true
-
             . First apply these to topLeftRectId, show how it tries to occupy
                 as much space as possible.
             . Apply the property to all other rectangles to have the thing risize

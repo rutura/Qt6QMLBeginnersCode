@@ -1,6 +1,7 @@
 /*
 
         . Exploring anchors margins and offsets
+        . Docs : https://doc.qt.io/qt-6/qtquick-positioning-anchors.html#anchor-margins-and-offsets
 
         . You can set margins to your anchors :
             . For the margin to work, there needs to be a related anchor already set.
@@ -69,14 +70,18 @@ Window {
             height: width
             color: "green"
 
-            //anchors.left: centerLeftRectId.right
-            //anchors.top: topRightRectId.bottom
+            //Using margins
+            /*
+            anchors.left: centerLeftRectId.right
+            anchors.top: topRightRectId.bottom
+            */
 
             //To allow center offsets
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
 
             //Margins
+            /*
             //To have margins working, you have to set the anchor property on that anchor line
             //We don't have a right anchor in this rectangle, so a right margin won't work
             //There won't be any error, it'll simply not work and this may be hard to debug.
@@ -85,14 +90,12 @@ Window {
             //This margin works because we have top anchor set.
             //Anything anchored to this rectangle will also be affected by the margin.
             //The entire bottom row will move down by 10
-            //anchors.topMargin: 10
+            anchors.topMargin: 10
+            */
 
             //Offsets
             anchors.horizontalCenterOffset: 10
             anchors.verticalCenterOffset: 10
-
-
-
         }
         Rectangle {
             id : centerRightRectId

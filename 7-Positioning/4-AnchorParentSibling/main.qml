@@ -36,11 +36,9 @@ Window {
             height: width
             color: "magenta"
 
-            //This anchor won't work because siblingRect isn't either a
-            //sibling or a parent
-            anchors.top: siblingRect.bottom
+            //This anchor won't work because siblingRect isn't either a ibling or a parent
+            //anchors.top: siblingRect.bottom
         }
-
         Rectangle {
             id : topCenterRectId
             width: 100
@@ -48,7 +46,6 @@ Window {
             color: "yellowgreen"
             anchors.left: topLeftRectId.right
         }
-
         Rectangle {
             id : topRightRectId
             width: 100
@@ -56,7 +53,6 @@ Window {
             color: "dodgerblue"
             anchors.left: topCenterRectId.right
         }
-
         Rectangle {
             id : centerLeftRectId
             width: 100
@@ -64,7 +60,6 @@ Window {
             color: "red"
             anchors.top: topLeftRectId.bottom
         }
-
         Rectangle {
             id : centerCenterRectId
             width: 100
@@ -73,7 +68,6 @@ Window {
             anchors.left: centerLeftRectId.right
             anchors.top: topRightRectId.bottom
         }
-
         Rectangle {
             id : centerRightRectId
             width: 100
@@ -82,8 +76,6 @@ Window {
             anchors.left: centerCenterRectId.right
             anchors.top: topRightRectId.bottom
         }
-
-
         //The bottom row will be positioned in terms of centerCenterRectId
         Rectangle {
             id : bottomLeftRectId
@@ -101,7 +93,6 @@ Window {
             anchors.left: centerCenterRectId.left
             anchors.top: centerCenterRectId.bottom
         }
-
         Rectangle {
             id : bottomRightRectId
             width: 100
