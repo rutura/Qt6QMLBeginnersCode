@@ -56,9 +56,7 @@ Window {
         ProgressBar {
             id : progressBarId1
             indeterminate: true
-
            anchors.horizontalCenter: parent.horizontalCenter
-
         }
 
 

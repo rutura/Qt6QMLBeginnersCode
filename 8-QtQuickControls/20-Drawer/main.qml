@@ -125,6 +125,6 @@ ApplicationWindow {
     Rectangle{
         id : contentRectId
         anchors.fill: parent
-        color: "lightsteelblue"
+        color: "gray"
     }
 }

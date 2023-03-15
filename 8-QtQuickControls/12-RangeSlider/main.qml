@@ -1,3 +1,9 @@
+/*
+
+    . Exploring Range Slider
+    . Use the docs and improvise.
+
+  */
 import QtQuick
 import QtQuick.Window
 import QtQuick.Controls
