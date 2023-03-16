@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.2, 2023-01-23T08:39:51. -->
+<!-- Written by QtCreator 7.0.2, 2023-03-16T13:15:34. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -304,6 +304,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">F:/OnlineCourses/Qt6QMLForBeginners/11-TransformsTransitionsAnimations/build-3-AnimationsIntro-Desktop_Qt_6_4_1_MinGW_64_bit-Debug</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

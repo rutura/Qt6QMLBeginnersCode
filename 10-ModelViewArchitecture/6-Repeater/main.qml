@@ -41,6 +41,7 @@ Window {
                     Text {
                         anchors.centerIn: parent
                         text: modelData
+                        font.pointSize: 20
                     }
                     MouseArea{
                         anchors.fill: parent

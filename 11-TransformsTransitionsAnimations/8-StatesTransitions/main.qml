@@ -73,8 +73,6 @@ Window {
             height: 100
             color : "yellow"
             radius: 60
-
-
         }
 
         state : "spring"
@@ -173,6 +171,7 @@ Window {
        ]
        */
 
+
         transitions : Transition {
             from : "*" ; to : "*"
 
@@ -184,6 +183,7 @@ Window {
                 duration: 500
             }
         }
+
 
         MouseArea{
             anchors.fill: parent

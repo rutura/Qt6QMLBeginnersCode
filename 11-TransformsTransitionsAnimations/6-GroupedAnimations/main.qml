@@ -32,8 +32,8 @@ Window {
             color: "yellowgreen"
         }
 
-        //SequentialAnimation{
-        ParallelAnimation{
+        SequentialAnimation{
+        //ParallelAnimation{
             id : groupedAnimId
 
             //Animate X
@@ -48,8 +48,8 @@ Window {
 
             //Animate Y
             NumberAnimation{
-                easing.type: Easing.OutBounce
-                easing.amplitude: 3
+                //easing.type: Easing.OutBounce
+                //easing.amplitude: 3
                 target: circleId
                 property : "y"
                 to : rootId.height - circleId.height

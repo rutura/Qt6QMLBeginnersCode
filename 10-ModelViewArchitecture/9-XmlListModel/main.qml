@@ -52,7 +52,6 @@ Window {
         XmlListModelRole { name: "year"; elementName: "year" }
         XmlListModelRole { name: "coursename"; elementName: "coursename" }
         XmlListModelRole { name: "hot"; elementName: "coursename"; attributeName: "hot" }
-
     }
 
     ListView{

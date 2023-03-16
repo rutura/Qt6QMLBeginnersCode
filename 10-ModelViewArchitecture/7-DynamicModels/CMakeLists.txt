@@ -5,7 +5,7 @@ project(7-DynamicModels VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
+find_package(Qt6 6.2 COMPONENTS Quick QuickControls2 REQUIRED)
 
 qt_add_executable(app7-DynamicModels
     main.cpp
@@ -28,4 +28,4 @@ set_target_properties(app7-DynamicModels PROPERTIES
 target_compile_definitions(app7-DynamicModels
     PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(app7-DynamicModels
-    PRIVATE Qt6::Quick)
+    PRIVATE Qt6::Quick Qt6::QuickControls2)

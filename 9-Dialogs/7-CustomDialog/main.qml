@@ -29,7 +29,7 @@ Window {
 
 
     Column {
-        spacing: 40
+        spacing: 20
         width:parent.width
 
 

@@ -70,7 +70,7 @@ Window {
             Text {
                 text : mNumber
                 anchors.centerIn: parent
-                font.pointSize: 10
+                font.pointSize: 20
 
             }
         }

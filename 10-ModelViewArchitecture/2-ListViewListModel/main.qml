@@ -70,7 +70,7 @@ Window {
             country : "Ghana"; capital : "Accra"
         }
         ListElement {
-            country : "France"; capital : "Paris"
+            country : "Kenya"; capital : "Nairobi"
         }
         ListElement {
             country : "India"; capital : "New Delhi"
