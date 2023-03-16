@@ -1,25 +1,29 @@
-/*
-
+---
+marp: true
+theme: default
+class: invert
+paginate : true
+size: 16:9
+footer: 'Slides by [Daniel Gakwaya](https://rutura.github.io/daniel.gakwaya/) at [LearnQtGuide](https://www.learnqt.guide/)'
+---
+![bg](images/slide_background.png)
+# Notes to self
     . Using XMLHttpRequest to download data from the internet.
     . You get data by calling the open method on yoUR XMLHttpRequest object
     . You can either call open asynchronously (default) or synchronously by putting
         in the 3rd bool parameter. See docs
     . In this lecture we'll just go with the default : asynchronous
     . Use the info you have and improvise.
+       
+---
+![bg](images/slide_background.png)
+# XMLHttpRequest
+![](images/1.png)
 
-  */
-
-import QtQuick
-import QtQuick.Window
-import QtQuick.Controls
-
-Window {
-    visible: true
-    width: 640
-    height: 480
-    title: qsTr("Downloading Http Data")
-
-
+---
+![bg](images/slide_background.png)
+# Download with a callback
+```qml
      //Process the data in a callback
     function downloadData(url, callback)
     {
@@ -44,10 +48,12 @@ Window {
         xhr.open("GET",url)
         xhr.send()
     }
+```
 
-
-
-/*
+---
+![bg](images/slide_background.png)
+# Download Right Away
+```qml
     //Process the data right away
 
     function downloadData(url){
@@ -70,17 +76,12 @@ Window {
         xhr.open("GET",url)
         xhr.send()
     }
-    */
+```
 
-
-
-    TextArea{
-        id : textAreaId
-        anchors.fill: parent
-        textFormat: TextArea.RichText
-        text: "Html Data here"
-    }
-
+---
+![bg](images/slide_background.png)
+# Trigger the download
+```qml
     MouseArea{
         anchors.fill: parent
         onClicked: {
@@ -107,8 +108,18 @@ Window {
 
             })
         }
-    }
+    } 
+```
 
+---
 
+![bg](images/slide_background.png)
+## CMake
+```cmake
+find_package(Qt6 6.2 COMPONENTS Quick QuickControls2 REQUIRED)
+...
+target_link_libraries(app2-Button
+    PRIVATE Qt6::Quick Qt6::QuickControls2)
 
-}
+```
+

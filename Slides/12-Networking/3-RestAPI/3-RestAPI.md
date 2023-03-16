@@ -1,4 +1,13 @@
-/*
+---
+marp: true
+theme: default
+class: invert
+paginate : true
+size: 16:9
+footer: 'Slides by [Daniel Gakwaya](https://rutura.github.io/daniel.gakwaya/) at [LearnQtGuide](https://www.learnqt.guide/)'
+---
+![bg](images/slide_background.png)
+# Notes to self
         . Getting data from a remote rest api
         . We use : https://jsonplaceholder.typicode.com/users
         . The fetching of the data is exactly the same as in the last lecture
@@ -13,22 +22,17 @@
                         })
 
         . Improvise.
+       
+---
+![bg](images/slide_background.png)
+# XMLHttpRequest
+![](images/1.png)
 
-  */
-
-import QtQuick
-import QtQuick.Window
-import QtQuick.Controls
-import QtQuick.Layouts
-
-Window {
-    visible: true
-    width: 640
-    height: 480
-    title: qsTr("Rest APIs Demo")
-
+---
+![bg](images/slide_background.png)
+# Fetch Data through callback
+```qml
     function fetchData( url , callback){
-
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.HEADERS_RECEIVED) {
@@ -49,26 +53,13 @@ Window {
         xhr.send();
 
     }
+```
 
-    ColumnLayout{
-        anchors.fill: parent
-        spacing: 0
-
-
-        ListModel{
-            id : mListModelId
-        }
-
-        ListView{
-            id : mListViewId
-            model: mListModelId
-            delegate: delegateId
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-
-        }
-
-        Button{
+---
+![bg](images/slide_background.png)
+# Trigger the API call
+```qml
+         Button{
             id : buttonId
             Layout.fillWidth: true
             text : "Fetch"
@@ -82,50 +73,62 @@ Window {
                         //Loop over the json object capturing joke data
                         object.forEach(function(userdata){
                             mListModelId.append({"userdata" : userdata.name})
-
                         })
                     }else{
                         console.log("Something went wrong")
                     }
-
-
                 })
-
-
             }
+        }
+```
 
-
+---
+![bg](images/slide_background.png)
+# ListView and ListModel
+```qml
+        ListModel{
+            id : mListModelId
         }
 
+        ListView{
+            id : mListViewId
+            model: mListModelId
+            delegate: delegateId
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+
+        } 
+```
+
+---
+![bg](images/slide_background.png)
+# Delegate
+```qml
         Component {
             id : delegateId
             Rectangle {
                 id : rectangleId
-                width : parent.width
-                height: textId.implicitHeight+30
                 color: "beige"
-                border.color: "yellowgreen"
-                radius: 5
 
                 Text {
-                    width : parent.width
-                    height: parent.height
                     id : textId
                     anchors.centerIn: parent
-                    //text : userdata //Or modelData
-                    text : modelData
-                    font.pointSize: 13
-                    wrapMode: Text.WordWrap
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
+                    text : userdata //Or modelData
+                    //text : modelData
                 }
-
             }
+        } 
+```
 
+---
 
+![bg](images/slide_background.png)
+## CMake
+```cmake
+find_package(Qt6 6.2 COMPONENTS Quick QuickControls2 REQUIRED)
+...
+target_link_libraries(app2-Button
+    PRIVATE Qt6::Quick Qt6::QuickControls2)
 
-        }
+```
 
-    }
-
-}
