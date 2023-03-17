@@ -41,10 +41,8 @@ Window {
         MButton{
            //focus: true
         }
-
         MButton{
-            //focus : true
-
+            focus : true
             color: "green"
         }
     }

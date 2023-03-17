@@ -46,7 +46,6 @@ Window {
             }
             */
 
-
             //Explicit Javascript function
             onClicked: function(mouse){
                 console.log(mouse.x)

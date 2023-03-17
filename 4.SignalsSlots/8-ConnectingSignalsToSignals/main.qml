@@ -47,7 +47,6 @@ Window {
         Component.onCompleted: {
             //Connect a signal to another signal
             rectId.greet.connect(rectId.forward_greeting)
-
             //Respond to the final signal
             rectId.forward_greeting.connect(rectId.respond_your_way)
         }

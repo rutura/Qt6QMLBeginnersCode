@@ -22,7 +22,7 @@ Window {
     width: 640
     height: 480
     visible: true
-    title: qsTr("Custom Signals")
+    title: qsTr("Connect Signal to Method")
 
     Rectangle{
         id : rectId

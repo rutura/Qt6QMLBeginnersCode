@@ -42,20 +42,20 @@ Window {
 
         MouseArea{
             anchors.fill: parent
-            //hoverEnabled: true
+            hoverEnabled: true
 
             onClicked: {
                 console.log("Clicked on the rect")
             }
 
             onDoubleClicked: {
-                //console.log("Double clicked on the rect")
+                console.log("Double clicked on the rect")
             }
             onEntered: {
-                //console.log("You're in!")
+                console.log("You're in!")
             }
             onExited: {
-               // console.log("You're out!")
+                console.log("You're out!")
             }
 
             onWheel: function(wheel) {
