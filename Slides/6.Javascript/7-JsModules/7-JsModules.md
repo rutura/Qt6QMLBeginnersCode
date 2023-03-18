@@ -1,5 +1,14 @@
-/*
-        . Exploring JS modules
+---
+marp: true
+theme: default
+class: invert
+paginate : true
+size: 16:9
+footer: 'Slides by [Daniel Gakwaya](https://rutura.github.io/daniel.gakwaya/) at [LearnQtGuide](https://www.learnqt.guide/)'
+---
+![bg](images/slide_background.png)
+# Notes to self
+       . Exploring JS modules
         . doc : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
         . The doc is targetted to js as used in browsers but the syntax applies to what
             we'll be using in QML here.
@@ -25,29 +34,44 @@
                 by re-exporting in utilities1.js but the syntax doesn't work
                 when you've imported everything with * like we've done here
 
-            . We'll see how to import specific names like add,subtract and export
-             them in the next lecture.
+            . One can browse the docs to learn more
+       
+---
+![bg](images/slide_background.png)
+# JS Modules
+![](images/1.png)
 
-  */
+---
+![bg](images/slide_background.png)
+# utilities1.js
+```qml
+export function add(age1,age2){
+	return age1 + age2
+}
 
-import QtQuick
-import "utilities1.mjs" as Utilities1
-Window {
-    visible: true
-    width: 640
-    height: 480
-    title: qsTr("Javascript Import Demo")
+ function subtract(age1,age2){
+    return age1 - age2;
+}
+```
+---
+![bg](images/slide_background.png)
+# utilities2.js
+```qml
+import * as Utilities2 from "utilities2.mjs";
 
-    Rectangle {
+export function combineAges(age1,age2){
+    return Utilities2.add(age1,age2)
+}
 
-        width : 300
-        height: 100
-        color: "yellowgreen"
-        anchors.centerIn: parent
-        Text {
-            text : "Click Me"
-            anchors.centerIn: parent
-        }
+export function ageDiff(age1,age2){
+    return Utilities2.subtract(age1,age2)
+}
+```
+---
+![bg](images/slide_background.png)
+# main.qml
+```qml
+        import "utilities1.mjs" as Utilities1
 
         MouseArea {
             anchors.fill: parent
@@ -67,5 +91,4 @@ Window {
                  console.log ("The sum is : " + Utilities1.add(33,17))//Error
             }
         }
-    }
-}
+```
