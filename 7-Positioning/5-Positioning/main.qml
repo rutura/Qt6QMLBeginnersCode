@@ -50,8 +50,8 @@ Window {
 //        anchors.horizontalCenter: parent.horizontalCenter
 //        anchors.verticalCenter: parent.verticalCenter
 
-        Grid {
-           columns: 3
+        Row {
+           //columns: 3
            //spacing: 10
 //           rowSpacing: 10
 //           columnSpacing: 10

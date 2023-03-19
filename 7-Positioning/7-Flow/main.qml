@@ -12,22 +12,18 @@
                             text : "1"
                         }
                     }
-
          . Show that by default these guys are laid out like words on a page,
             when the line fills up, the content wraps to the next line.
 
          . Show the flow property. Can be :
                 . Flow.LeftToRight(default)
                 . Flow.TopToButtom
-
          . Show layoutDirection. Can be :
                 . Qt.RightToLeft
                 . Qt.LeftToRight(default)
-
          . Can also combine flow and layout direction :
                 .         flow : Flow.TopToBottom
                           layoutDirection: Qt.RightToLeft
-
          . Show spacing :
             . spacing: 20
 
@@ -48,8 +44,8 @@ Window {
         width : parent.width
         height: parent.height
 
-        flow : Flow.TopToBottom
-        layoutDirection: Qt.RightToLeft
+       // flow : Flow.TopToBottom
+       // layoutDirection: Qt.RightToLeft
 
         //spacing: 20
 
