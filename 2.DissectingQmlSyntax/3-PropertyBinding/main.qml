@@ -39,6 +39,7 @@ Window {
         }
     }
 
+    /*
     Rectangle {
         id : greenRectId
         color: "green"
@@ -59,4 +60,5 @@ Window {
             }
         }
     }
+    */
 }

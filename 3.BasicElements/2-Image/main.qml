@@ -38,7 +38,7 @@ Window {
 
         Image {
             x : 10
-            y : 150
+            y : 50
             width: 100
             height: 100
             //Loading image from the working directory
@@ -46,29 +46,31 @@ Window {
         }
 
 
+
         Image {
             x : 150
-            y : 150
+            y : 50
             width: 100
             height: 100
             //Loading image from the resource file
             source: "qrc:/images/LearnQt.png"
         }
 
+
+
         //Load image from a full path
         Image {
             x : 300
-            y : 150
+            y : 50
             width: 100
             height: 100
             //Specify the full path to the image
             source: "file:///D:/Artwork/LearnQt.png"
         }
 
-
         Image {
             x : 450
-            y : 150
+            y : 50
             width: 100
             height: 100
             //Specify the full web path to the image
@@ -76,5 +78,28 @@ Window {
         }
 
 
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

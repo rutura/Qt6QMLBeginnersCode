@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
 qt_add_executable(app2-Image
-    main.cpp resource.qrc
+    main.cpp resource.qrc resource1.qrc
 )
 
 qt_add_qml_module(app2-Image

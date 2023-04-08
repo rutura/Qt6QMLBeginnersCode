@@ -29,13 +29,32 @@ Window {
     Item {
         id : containerItemId
         x : 150 ;y : 50
-        width: 600
-        height: 300
+        width: 400
+        height: 200
+
 
         Rectangle{
             anchors.fill: parent
             color: "beige"
+
+            /*
+            //Grouped Property Syntax Variation #1
             border.color: "black"
+            border.width : 5
+            */
+
+            //Grouped Property Syntax Variation #2
+            /*
+            border{
+                color : "black"
+                width : 5
+            }
+            */
+
+            //Grouped Property Syntax Variation #3
+            border{
+                color : "black";width : 5
+            }
         }
 
         Rectangle{
@@ -66,6 +85,8 @@ Window {
             }
         }
 
+             /*
+
         Rectangle{
             x : 120
             y : 10
@@ -93,25 +114,26 @@ Window {
                 }
             }
         }
-
+        */
         Text {
             x : 100
             y : 100
             id : mTextId
             text: "Hello World!"
             //font.family: "Helvetica"; font.pointSize: 13; font.bold: true
-            /*
-            font {
-                family: "Helvetica"
-                pointSize: 13
-                bold: true
-            }
-            */
+//
+//            font {
+//                family: "Helvetica"
+//                pointSize: 13
+//                bold: true
+//            }
+//
             font {
                 family: "Helvetica";pointSize: 13;bold: true
             }
 
             color: "red"
         }
+
     }
 }

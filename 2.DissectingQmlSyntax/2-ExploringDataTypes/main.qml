@@ -51,8 +51,8 @@ Window {
             id: mTextId
             anchors.centerIn: parent
             text: mString
-            //font.bold: isFemale?true:false
-            font : aFont
+            font.bold: isFemale?true:false
+            //font : aFont
         }
     }
 
