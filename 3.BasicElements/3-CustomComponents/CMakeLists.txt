@@ -14,7 +14,7 @@ qt_add_executable(app3-CustomComponents
 qt_add_qml_module(app3-CustomComponents
     URI 3-CustomComponents
     VERSION 1.0
-    QML_FILES main.qml MButton.qml
+    QML_FILES main.qml MButton.qml SButton.qml
 )
 
 set_target_properties(app3-CustomComponents PROPERTIES

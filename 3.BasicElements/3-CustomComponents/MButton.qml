@@ -7,9 +7,7 @@ Item {
     height: containerRectId.height
     signal buttonClicked
 
-
     Rectangle {
-
         id : containerRectId
         width: buttonTextId.implicitWidth + 20
         height: buttonTextId.implicitHeight + 20
@@ -35,3 +33,19 @@ Item {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
