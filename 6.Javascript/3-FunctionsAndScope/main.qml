@@ -13,7 +13,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
@@ -45,6 +44,7 @@ Window {
 
         onClicked: {
             sayMessage()
+            console.log(min(10,12))
 
         }
     }

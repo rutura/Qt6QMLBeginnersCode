@@ -13,7 +13,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
@@ -40,6 +39,7 @@ Window {
             }
         }
 
+
         Rectangle {
             id : topCenterRectId
             width: 100
@@ -53,6 +53,8 @@ Window {
             }
         }
 
+
+
         Rectangle {
             id : topRightRectId
             width: 100
@@ -65,6 +67,10 @@ Window {
                 font.pointSize: 20
             }
         }
+
+
+
+
 
         Rectangle {
             id : centerLeftRectId
@@ -84,8 +90,22 @@ Window {
             width: 100
             height: width
             color: "green"
+
+            //Position relative to other rectangles
+            /*
             anchors.left: centerLeftRectId.right
             anchors.top: topRightRectId.bottom
+            */
+
+            //Position relative to parent center lines
+            /*
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            */
+
+            //Position using the anchors.centerIn shorthand
+            anchors.centerIn: parent
+
             Text{
                 anchors.centerIn: parent
                 text : "5"
@@ -106,6 +126,8 @@ Window {
                 font.pointSize: 20
             }
         }
+
+
 
 
         //The bottom row will be positioned in terms of centerCenterRectId
@@ -150,6 +172,5 @@ Window {
             }
         }
     }
-
 
 }

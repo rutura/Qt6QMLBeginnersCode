@@ -31,7 +31,6 @@
 
 
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
@@ -51,7 +50,9 @@ Window {
         anchors.right: parent.right
     }
 
-//    Component.onCompleted: {
-//        notifierId.notify.connect(receiverId.receiveInfo)//Connect signal to slot
-//    }
+    /*
+    Component.onCompleted: {
+        notifierId.notify.connect(receiverId.receiveInfo)//Connect signal to slot
+    }
+    */
 }

@@ -5,19 +5,24 @@ Item {
     //Could have used an alias for rectColor here, but I just want you
     //to see that you can also do it this way, and rely on the property handler
     // to save the new color when applied.
-    property color rectColor: "black"
+
+
     width: notifierRectId.width
     height: notifierRectId.height
     property int count: 0
     signal notify( string count)//Declare signal
-    property Receiver target : null
 
+
+    property Receiver target : null
     onTargetChanged: {
         notify.connect(target.receiveInfo)
     }
+
+    property color rectColor: "black"
     onRectColorChanged: {
         notifierRectId.color = rectColor
     }
+
 
 
     Rectangle {

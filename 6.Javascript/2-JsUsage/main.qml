@@ -9,7 +9,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
@@ -27,8 +26,6 @@ Window {
         onXChanged: {
             console.log("Current value of x : "+ x)
         }
-
-        //anchors.centerIn: parent
 
         //Custom function
         function getHeight()

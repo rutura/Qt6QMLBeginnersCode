@@ -9,7 +9,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
@@ -87,4 +86,5 @@ Window {
 
 
     }
+
 }

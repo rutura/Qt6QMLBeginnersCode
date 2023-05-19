@@ -44,8 +44,8 @@ Window {
         width : parent.width
         height: parent.height
 
-       // flow : Flow.TopToBottom
-       // layoutDirection: Qt.RightToLeft
+        flow : Flow.TopToBottom
+        layoutDirection: Qt.RightToLeft
 
         //spacing: 20
 

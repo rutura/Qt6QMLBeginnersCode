@@ -30,19 +30,18 @@ Window {
     width: 640
     height: 480
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("Signal Handlers")
 
     Rectangle{
         id : rect
         width : 150
         height: 150
         color : "red"
-        anchors.left: parent.left
 
 
         MouseArea{
             anchors.fill: parent
-            hoverEnabled: true
+            //hoverEnabled: true
 
             onClicked: {
                 console.log("Clicked on the rect")

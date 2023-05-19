@@ -9,13 +9,13 @@
   */
 
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
     width: 640
     height: 480
     title: qsTr("Key Navigation Demo")
+
 
 
     Grid {
@@ -64,7 +64,8 @@ Window {
 
 
 
-/*
+
+    /*
     Row {
         anchors.centerIn: parent
 
@@ -73,17 +74,11 @@ Window {
             width: 200
             height: width
             border.color: "black"
-            color: "green"
+            color: "red"
             focus: true
 
             onFocusChanged: {
-                if ( focus)
-                {
-                    color = "green"
-                }else
-                {
-                    color = "gray"
-                }
+                color = focus?"red":"gray"
             }
 
             Keys.onDigit5Pressed: {
@@ -97,15 +92,9 @@ Window {
             width: 200
             height: width
             border.color: "black"
-            color: "blue"
+            color: "gray"
             onFocusChanged: {
-                if ( focus )
-                {
-                    color = "blue"
-                }else
-                {
-                    color = "gray"
-                }
+                color = focus?"red":"gray"
             }
 
 
@@ -116,5 +105,6 @@ Window {
         }
     }
     */
+
 
 }

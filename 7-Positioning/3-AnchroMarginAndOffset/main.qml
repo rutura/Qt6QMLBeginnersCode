@@ -38,6 +38,11 @@ Window {
             width: 100
             height: width
             color: "magenta"
+            Text{
+                anchors.centerIn: parent
+                text : "1"
+                font.pointSize: 20
+            }
         }
 
         Rectangle {
@@ -46,6 +51,11 @@ Window {
             height: width
             color: "yellowgreen"
             anchors.left: topLeftRectId.right
+            Text{
+                anchors.centerIn: parent
+                text : "2"
+                font.pointSize: 20
+            }
         }
 
         Rectangle {
@@ -54,6 +64,11 @@ Window {
             height: width
             color: "dodgerblue"
             anchors.left: topCenterRectId.right
+            Text{
+                anchors.centerIn: parent
+                text : "3"
+                font.pointSize: 20
+            }
         }
 
         Rectangle {
@@ -62,6 +77,11 @@ Window {
             height: width
             color: "red"
             anchors.top: topLeftRectId.bottom
+            Text{
+                anchors.centerIn: parent
+                text : "4"
+                font.pointSize: 20
+            }
         }
 
         Rectangle {
@@ -70,32 +90,32 @@ Window {
             height: width
             color: "green"
 
-            //Using margins
             /*
+
+
+            //Anchor relative to other rectangles
             anchors.left: centerLeftRectId.right
             anchors.top: topRightRectId.bottom
+
+            //Margins
+            anchors.topMargin: 10
+            //anchors.rightMargin: 10  // This margin won't work because we have no right anchor
+            //anchors.leftMargin: 10
             */
 
-            //To allow center offsets
+            //Anchor relative to center anchor lines
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
 
-            //Margins
-            /*
-            //To have margins working, you have to set the anchor property on that anchor line
-            //We don't have a right anchor in this rectangle, so a right margin won't work
-            //There won't be any error, it'll simply not work and this may be hard to debug.
-            //anchors.rightMargin: 10
-
-            //This margin works because we have top anchor set.
-            //Anything anchored to this rectangle will also be affected by the margin.
-            //The entire bottom row will move down by 10
-            anchors.topMargin: 10
-            */
-
             //Offsets
-            anchors.horizontalCenterOffset: 10
+            anchors.horizontalCenterOffset: -10
             anchors.verticalCenterOffset: 10
+
+            Text{
+                anchors.centerIn: parent
+                text : "5"
+                font.pointSize: 20
+            }
         }
         Rectangle {
             id : centerRightRectId
@@ -104,6 +124,11 @@ Window {
             color: "blue"
             anchors.left: centerCenterRectId.right
             anchors.top: topRightRectId.bottom
+            Text{
+                anchors.centerIn: parent
+                text : "6"
+                font.pointSize: 20
+            }
         }
 
 
@@ -115,6 +140,12 @@ Window {
             color: "royalblue"
             anchors.right: centerCenterRectId.left
             anchors.top: centerCenterRectId.bottom
+            Text{
+                anchors.centerIn: parent
+                text : "7"
+                font.pointSize: 20
+            }
+
         }
         Rectangle {
             id : bottomCenterRectId
@@ -123,6 +154,11 @@ Window {
             color: "yellow"
             anchors.left: centerCenterRectId.left
             anchors.top: centerCenterRectId.bottom
+            Text{
+                anchors.centerIn: parent
+                text : "8"
+                font.pointSize: 20
+            }
         }
 
         Rectangle {
@@ -132,6 +168,11 @@ Window {
             color: "pink"
             anchors.left: centerCenterRectId.right
             anchors.top: centerCenterRectId.bottom
+            Text{
+                anchors.centerIn: parent
+                text : "9"
+                font.pointSize: 20
+            }
         }
     }
 

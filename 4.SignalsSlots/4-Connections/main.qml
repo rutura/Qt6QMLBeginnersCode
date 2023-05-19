@@ -16,8 +16,7 @@
   */
 
 import QtQuick
-import QtQuick.Controls
-
+import QtQml
 Window {
     width: 640
     height: 480
@@ -29,21 +28,20 @@ Window {
         width : 200
         height: 200
         color : "blue"
-        anchors.left: parent.left
 
         MouseArea{
             id:mouseAreaId
             anchors.fill: parent
         }
+    }
 
-        Connections  {
-            target : mouseAreaId
-            function onClicked(){
-                console.log("Hello")
-            }
-            function onDoubleClicked(mouse){
-                console.log("Doubleclicked at : "+mouse.x)
-            }
+    Connections  {
+        target : mouseAreaId
+        function onClicked(){
+            console.log("Hello")
+        }
+        function onDoubleClicked(mouse){
+            console.log("Doubleclicked at : "+mouse.x)
         }
     }
 }

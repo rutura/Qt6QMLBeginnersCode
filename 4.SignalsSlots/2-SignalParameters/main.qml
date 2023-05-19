@@ -2,10 +2,7 @@
 
 
              . Show how to handle parameters from signals :
-                . The bad way  : can just mention the parameter name out of the blue
-                        name must be that coming from the signal
-                    onClicked: {
-                        //Deprecated : Injection of parameters into signal handlers is deprecated. Use JavaScript functions with formal parameters instead warning
+                . The Wf parameters into signal handlers is deprecated. Use JavaScript functions with formal parameters instead warning
                         console.log(mouse.x)
                     }
                . Using explicit js functions  :
@@ -28,14 +25,13 @@ Window {
     width: 640
     height: 480
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("Signal Parameters")
 
     Rectangle{
         id : rect
         width : 150
         height: 150
         color : "red"
-        anchors.left: parent.left
 
         MouseArea{
             anchors.fill: parent
@@ -47,19 +43,16 @@ Window {
             */
 
             //Explicit Javascript function
-            onClicked: function(mouse){
-                console.log(mouse.x)
-            }
-
             /*
-             //Arrow function
-            onClicked: (mouse) => console.log(mouse.x)
+            onClicked: function(mouse_param){
+                console.log(mouse_param.x)
+            }
             */
+
+
+             //Arrow function
+            onClicked: (mouse_param) => console.log(mouse_param.x)
+
         }
-
-
-
     }
-
-
 }

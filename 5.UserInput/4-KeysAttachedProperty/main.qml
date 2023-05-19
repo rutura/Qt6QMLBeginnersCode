@@ -61,7 +61,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
@@ -77,13 +76,15 @@ Window {
         color: "dodgerblue"
         focus: true // The rectangle needs focus for key events to fire properly
 
+        /*
         Keys.onDigit5Pressed:function(event) {
             console.log("Specific Signal : Pressed on Key 5")
             event.accepted = true
         }
+        */
 
 
-        /*
+
         Keys.onDigit5Pressed:function(event) {
            if ( event.modifiers === Qt.ControlModifier)
            {
@@ -91,17 +92,20 @@ Window {
            }else{
                console.log("Pressed regular 5")
            }
+           event.accepted = false
+
         }
-        */
+
+
 
 
         Keys.onPressed: function(event){
-            if ( event.key ===Qt.Key_5)
+            if ( (event.key ===Qt.Key_5)&& !(event.modifiers & Qt.ControlModifier))
             {
-                 console.log("General Signal :Pressed on Key 5")
+                 console.log("General Signal: Pressed on Key 5")
             }
             if ((event.key === Qt.Key_5) && (event.modifiers & Qt.ControlModifier)){
-                console.log("Pressed Control + 5")
+                console.log("General Signal: Pressed Control + 5")
             }
         }
     }

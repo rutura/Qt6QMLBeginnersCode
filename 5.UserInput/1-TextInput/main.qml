@@ -55,11 +55,6 @@ Window {
     }
 
 
-
-
-
-
-
     Row {
         x : 10; y : 60
         spacing: 10
@@ -95,5 +90,6 @@ Window {
 
         }
     }
+
 
 }

@@ -29,7 +29,6 @@ Window {
         width : 300
         height : 300
         color : "dodgerblue"
-        anchors.left: parent.left
 
         //Set up the signal
         signal greet(string message)
@@ -59,7 +58,5 @@ Window {
             //Make the connection explicitly
             rectId.greet.connect(rectId.respond_your_way)
         }
-
-
     }
 }

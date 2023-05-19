@@ -13,10 +13,6 @@ Window {
     visible: true
     title: qsTr("Multiple Signal Parameters")
 
-
-
-
-
     signal info(string last_name,string first_name,int age)
 
     //Handle all three parameters
@@ -24,13 +20,13 @@ Window {
         print("last name : " +l + ", first name : " + f +", age : "+ a)
     }
 
-    //Only handle two
+    //Only handle the first two
     /*
     onInfo : function(l,f){
         print("last name : " +l + ", first name : " + f)
     }
     */
-    //Only handle one
+    //Only handle the first one
     /*
     onInfo : function(l){
         print("last name : " +l)

@@ -6,6 +6,7 @@ Item {
     width: receiverRectId.width
     height: receiverRectId.height
 
+
     function receiveInfo( count){
         receiverDisplayTextId.text = count
         console.log("Receiver received number : "+ count)
@@ -13,11 +14,12 @@ Item {
 
 
 
+
     Rectangle {
         id : receiverRectId
         width: 200
         height: 200
-        color: "red"
+        color: "blue"
 
 
         Text {

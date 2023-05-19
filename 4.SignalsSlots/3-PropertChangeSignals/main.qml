@@ -19,14 +19,15 @@ Window {
     width: 640
     height: 480
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("Property change handlers")
 
     Rectangle{
         id : rect
         width : 300
         height : width
         color : "dodgerblue"
-        anchors.left: parent.left
+
+        property string description : "A rectangle to play with"
 
         onWidthChanged: function(){
             console.log("Width changed to :"+ rect.width)
@@ -40,6 +41,10 @@ Window {
 
         }
         onVisibleChanged: {
+
+        }
+
+        onDescriptionChanged: {
 
         }
 

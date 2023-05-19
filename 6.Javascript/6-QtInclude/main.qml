@@ -15,7 +15,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import "utilities1.js" as Utilities1
 
 Window {

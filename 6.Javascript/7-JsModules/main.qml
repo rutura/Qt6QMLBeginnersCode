@@ -52,18 +52,21 @@ Window {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-              /*
-              //Calling a properly exported mathod
+               //Calling a properly exported mathod
+                /*
                console.log("Our ages combined yield :" + Utilities1.combineAges(33,17))
                 */
-                /*
+
+
                 //Can't call a method that's not exported : subtract isn't exported from utilities2.mjs
+                /*
                 console.log("Age diff : " + Utilities1.ageDiff(33,17))
                 */
 
+
+
                 //Just because add is usable from utilities1.js doesn't mean main.qml
-                 // can use it. utilities2.js doesn't export it. You can export explicit names
-                //as we'll see in a later lecture.
+                 // can use it. utilities2.js doesn't export it.
                  console.log ("The sum is : " + Utilities1.add(33,17))//Error
             }
         }
