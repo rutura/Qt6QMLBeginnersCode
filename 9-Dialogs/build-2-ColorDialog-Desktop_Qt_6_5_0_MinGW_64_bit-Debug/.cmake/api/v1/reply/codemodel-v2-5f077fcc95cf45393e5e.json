@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-723c971614872cfbcf8e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "2-ColorDialog",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-5858ff35444038540c2b.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-c6328d2d58a231c04faf.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-11e3ff28ca15e00c9c6f.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-720cc263b2fb08e1e336.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog-Debug-aa401837320cfc09c341.json",
+					"name" : "app2-ColorDialog",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_autogen-Debug-d3eb2ebb58e0b328143b.json",
+					"name" : "app2-ColorDialog_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_autogen_timestamp_deps-Debug-51d60b360073ea78eefc.json",
+					"name" : "app2-ColorDialog_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_qmlimportscan-Debug-fe39cbe2321c5bba843b.json",
+					"name" : "app2-ColorDialog_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_qmllint-Debug-eb6bbc498101637c4bfe.json",
+					"name" : "app2-ColorDialog_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_qmllint_json-Debug-9331f81003de246c63f4.json",
+					"name" : "app2-ColorDialog_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_qmllint_module-Debug-8daf71e53d7f23cb93f1.json",
+					"name" : "app2-ColorDialog_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_qmltyperegistration-Debug-7a0662bfa8e96ea7cc6c.json",
+					"name" : "app2-ColorDialog_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app2-ColorDialog_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app2-ColorDialog_tooling-Debug-9c0f245eb48fc527e4b0.json",
+					"name" : "app2-ColorDialog_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/OnlineCourses/Qt6QMLForBeginners/9-Dialogs/build-2-ColorDialog-Desktop_Qt_6_5_0_MinGW_64_bit-Debug",
+		"source" : "F:/OnlineCourses/Qt6QMLForBeginners/9-Dialogs/2-ColorDialog"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

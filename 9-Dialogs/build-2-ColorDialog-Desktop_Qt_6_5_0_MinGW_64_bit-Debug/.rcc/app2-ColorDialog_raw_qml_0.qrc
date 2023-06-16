@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/2-ColorDialog/">
+    <file alias="Main.qml">F:/OnlineCourses/Qt6QMLForBeginners/9-Dialogs/2-ColorDialog/Main.qml</file>
+  </qresource>
+</RCC>
+
