@@ -11,7 +11,7 @@
   */
 
 import QtQuick
-import QtQuick.Window
+import QtQuick.Layouts
 import QtQuick.Controls
 
 Window {
@@ -20,14 +20,14 @@ Window {
     height: 480
     title: qsTr("DelayButton")
 
-    Column {
+    ColumnLayout {
         width: parent.width
         spacing: 40
 
         Label {
             width: parent.width
             wrapMode: Label.Wrap
-            horizontalAlignment: Qt.AlignHCenter
+            Layout.fillWidth: true
             text: "Delayed Button. Use it when you want to prevent accidental clicks"
             font.pointSize: 15
         }
@@ -35,13 +35,13 @@ Window {
         DelayButton {
             property bool activated: false
             text: "DelayButton"
-            anchors.horizontalCenter: parent.horizontalCenter
+            Layout.fillWidth: true
             delay: 1000
 
             onPressed: {
                 if(activated === true)
                 {
-                    console.log("Button is Clicked")
+                    console.log("Button is Clicked. Carrying out the task")
                     activated = false;
                 }
             }

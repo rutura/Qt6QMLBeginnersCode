@@ -6,7 +6,6 @@
 
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Dialogs
 import QtQuick.Controls
 
@@ -25,11 +24,8 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
                 colorDialogId.open()
-
             }
-
         }
-
         Rectangle{
             width: 200
             height: 200
@@ -47,8 +43,6 @@ Window {
                 rectangleId.color = selectedColor
 
             }
-
-
             onRejected: {
                 console.log("User rejected dialog")
             }

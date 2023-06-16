@@ -6,7 +6,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 
 Window {
@@ -21,6 +20,7 @@ Window {
 
         Slider {
             anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
             from : 1
             to : 100
             value: 40
@@ -31,6 +31,7 @@ Window {
 
         ProgressBar {
             anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
             id : progressBarId
             from : 1
             to : 100

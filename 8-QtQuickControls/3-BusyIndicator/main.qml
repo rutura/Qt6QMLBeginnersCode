@@ -25,7 +25,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 import QtQuick.Layouts
 
@@ -37,7 +36,7 @@ Window {
 
     ColumnLayout {
         width: parent.width
-       // height: parent.height
+        //height: parent.height
 
         BusyIndicator{
             id : busyIndicatorId
@@ -70,15 +69,17 @@ Window {
                 }
             }
         }
-/*
+
+        /*
         Item {
             Layout.fillHeight: true
             Layout.fillWidth: true
-//            Rectangle {
-//                anchors.fill: parent
-//                color: "red"
-//            }
+            Rectangle {
+                anchors.fill: parent
+                color: "red"
+            }
         }
         */
+
     }
 }

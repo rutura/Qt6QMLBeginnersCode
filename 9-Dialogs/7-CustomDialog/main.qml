@@ -62,6 +62,8 @@ Window {
         }
 
 
+
+
         Button {
             id: button
             text: "Confirmation"
@@ -93,6 +95,8 @@ Window {
                 }
             }
         }
+
+
 
 
         Button {
@@ -159,6 +163,8 @@ Window {
         }
 
 
+
+
         Button {
             text: "Input"
             anchors.horizontalCenter: parent.horizontalCenter
@@ -198,5 +204,6 @@ Window {
                 }
             }
         }
+
     }
 }

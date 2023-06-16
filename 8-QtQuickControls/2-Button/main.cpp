@@ -2,7 +2,6 @@
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
 
-
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
@@ -16,13 +15,11 @@ int main(int argc, char *argv[])
     //QQuickStyle::setStyle("Imagine");
     //QQuickStyle::setStyle("Default");
 
-    const QUrl url(u"qrc:/2-Button/main.qml"_qs);
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
+
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,
+        &app, []() { QCoreApplication::exit(-1); },
+        Qt::QueuedConnection);
+    engine.loadFromModule("2-Button", "Main");
 
     return app.exec();
 }

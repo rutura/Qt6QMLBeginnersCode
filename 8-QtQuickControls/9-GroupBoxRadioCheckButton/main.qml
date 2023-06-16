@@ -7,7 +7,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 
 Window {
@@ -20,6 +19,7 @@ Window {
         spacing: 10
         anchors.fill: parent
 
+        //RadioButton controls
         Label {
             width: parent.width
             wrapMode: Label.Wrap
@@ -51,7 +51,7 @@ Window {
             }
         }
 
-
+        //CheckBox Controls
         Label {
             width: parent.width
             wrapMode: Label.Wrap
@@ -83,5 +83,6 @@ Window {
                 }
             }
         }
+
     }
 }

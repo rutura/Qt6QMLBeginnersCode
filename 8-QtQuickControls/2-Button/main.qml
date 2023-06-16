@@ -39,7 +39,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 import QtQuick.Layouts
 
@@ -49,7 +48,7 @@ Window {
     height: 480
     title: qsTr("Button")
 
-    RowLayout {
+    ColumnLayout {
         anchors.left: parent.left
         anchors.right: parent.right
 
@@ -60,11 +59,7 @@ Window {
             onClicked: {
                 console.log("Clicked on button1")
             }
-            onDoubleClicked: {
-                console.log("Double clicked on button1")
-            }
         }
-
         Button{
             id : button2
             text : "Button2"

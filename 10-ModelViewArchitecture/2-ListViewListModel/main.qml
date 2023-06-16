@@ -23,9 +23,9 @@ Window {
         id : mListViewId
         anchors.fill: parent
         model : mModelId
-        delegate : delegateId
+        //delegate : delegateId
 
-        /*
+
         delegate: Rectangle {
             id : rectangleId
             width: parent.width
@@ -48,21 +48,23 @@ Window {
                 }
             }
         }
-        */
+
     }
 
 
     ListModel {
         id : mModelId
         ListElement {
-            country : "Rwanda"; capital : "Kigali"
+            country : "Rwanda"
+            capital : "Kigali"
         }
         ListElement {
-            country : "China"; capital : "Beijing"
+            country : "Germany"; capital : "Berlin"
         }
         ListElement {
             country : "Japan"; capital : "Tokyo"
         }
+
         ListElement {
             country : "Nigeria"; capital : "Lagos"
         }
@@ -78,6 +80,7 @@ Window {
         ListElement {
             country : "Uganda"; capital : "Kampala"
         }
+
     }
 
     Component {
@@ -86,9 +89,9 @@ Window {
             id : rectangleId
             width: parent.width
             height: 50
-            color: "beige"
-            border.color: "yellowgreen"
-            radius: 10
+            color: "dodgerblue"
+            border.color: "black"
+            radius: 15
 
             Text {
                 id : textId

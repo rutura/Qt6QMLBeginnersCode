@@ -2,22 +2,23 @@ cmake_minimum_required(VERSION 3.16)
 
 project(17-TextAreaScrollView VERSION 0.1 LANGUAGES CXX)
 
-set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
 
-qt_add_executable(17-TextAreaScrollView
+qt_standard_project_setup(REQUIRES 6.5)
+
+qt_add_executable(app17-TextAreaScrollView
     main.cpp
 )
 
-qt_add_qml_module(17-TextAreaScrollView
+qt_add_qml_module(app17-TextAreaScrollView
     URI 17-TextAreaScrollView
     VERSION 1.0
-    QML_FILES main.qml 
+    QML_FILES Main.qml
 )
 
-set_target_properties(17-TextAreaScrollView PROPERTIES
+set_target_properties(app17-TextAreaScrollView PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -25,7 +26,12 @@ set_target_properties(17-TextAreaScrollView PROPERTIES
     WIN32_EXECUTABLE TRUE
 )
 
-target_compile_definitions(17-TextAreaScrollView
-    PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(17-TextAreaScrollView
-    PRIVATE Qt6::Quick)
+target_link_libraries(app17-TextAreaScrollView
+    PRIVATE Qt6::Quick
+)
+
+install(TARGETS app17-TextAreaScrollView
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)

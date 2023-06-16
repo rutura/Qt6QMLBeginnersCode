@@ -5,18 +5,15 @@
 
 int main(int argc, char *argv[])
 {
+
     QGuiApplication app(argc, argv);
 
-    QQuickStyle::setStyle("Material");
-
     QQmlApplicationEngine engine;
-    const QUrl url(u"qrc:/7-CustomDialog/main.qml"_qs);
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
+    QQuickStyle::setStyle("Material");
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,
+        &app, []() { QCoreApplication::exit(-1); },
+        Qt::QueuedConnection);
+    engine.loadFromModule("7-CustomDialog", "Main");
 
     return app.exec();
 }

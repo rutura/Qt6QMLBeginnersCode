@@ -11,7 +11,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 
 Window {
@@ -24,6 +23,7 @@ Window {
         width: parent.width
         spacing: 20
 
+
         Button {
             text : "Start"
             anchors.horizontalCenter: parent.horizontalCenter
@@ -31,6 +31,7 @@ Window {
                 progressBarId.value = 78
             }
         }
+
 
         Dial {
             id : dialId
@@ -43,6 +44,8 @@ Window {
            }
 
         }
+
+
 
         ProgressBar {
             id : progressBarId
@@ -58,7 +61,5 @@ Window {
             indeterminate: true
            anchors.horizontalCenter: parent.horizontalCenter
         }
-
-
     }
 }

@@ -17,14 +17,12 @@ Window {
     height: 480
     title: qsTr("MessageDialog ")
 
-
     Button{
         text : "Push Me"
         onClicked: {
             messageDialog.open()
         }
     }
-
 
     MessageDialog {
         id: messageDialog
@@ -33,12 +31,9 @@ Window {
         buttons: MessageDialog.Ok | MessageDialog.Close
         onAccepted: {
             console.log("Dialog accepted.")
-
         }
         onRejected: {
             console.log("Dialog rejected")
         }
-
-
     }
 }

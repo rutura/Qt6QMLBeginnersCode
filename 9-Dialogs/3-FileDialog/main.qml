@@ -49,10 +49,10 @@ Window {
         FileDialog{
             id : fileDialogId
             title: "Choose File"
+            nameFilters: ["Text files (*.txt)", "HTML files (*.html *.htm)", "Images (*.jpg *.png)"]
 
             onAccepted: {
                 textId.text = selectedFile
-
             }
 
             onRejected: {
@@ -61,3 +61,26 @@ Window {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

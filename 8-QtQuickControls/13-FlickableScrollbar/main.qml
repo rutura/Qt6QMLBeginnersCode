@@ -12,7 +12,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 
 Window {
@@ -91,6 +90,7 @@ Window {
                     color : "white"
                 }
             }
+            /*
             Rectangle {
                 color: "red"
                 width: parent.width
@@ -124,6 +124,7 @@ Window {
                     color : "white"
                 }
             }
+            */
 
 
 

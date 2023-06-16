@@ -5,6 +5,19 @@
 
 int main(int argc, char *argv[])
 {
+
+    QGuiApplication app(argc, argv);
+
+    QQmlApplicationEngine engine;
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,
+        &app, []() { QCoreApplication::exit(-1); },
+        Qt::QueuedConnection);
+    engine.loadFromModule("DemoApp", "Main");
+
+    return app.exec();
+
+
+    /*
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
@@ -21,4 +34,5 @@ int main(int argc, char *argv[])
     engine.load(url);
 
     return app.exec();
+    */
 }

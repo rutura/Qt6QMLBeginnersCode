@@ -4,7 +4,6 @@
 
   */
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 
 Window {
@@ -30,7 +29,7 @@ Window {
             from: 1
             to : 100
             value: 50
-            //wrap: true
+            wrap: true
 
             onValueChanged: {
                 console.log(" Current value : " + Math.ceil(value))

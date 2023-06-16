@@ -3,22 +3,17 @@
 #include <QQuickStyle>
 
 
-
 int main(int argc, char *argv[])
 {
+
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    QQuickStyle::setStyle("Material");
-
-
-    const QUrl url(u"qrc:/3-BusyIndicator/main.qml"_qs);
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
+	QQuickStyle::setStyle("Material");
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,
+        &app, []() { QCoreApplication::exit(-1); },
+        Qt::QueuedConnection);
+    engine.loadFromModule("3-BusyIndicator", "Main");
 
     return app.exec();
 }

@@ -42,12 +42,40 @@ Window {
             onAccepted: {
                 console.log("Chose font : "+selectedFont)
                 textId.font = fontDialogId.selectedFont
-
             }
-
             onRejected: {
                 console.log("Dialog rejected")
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

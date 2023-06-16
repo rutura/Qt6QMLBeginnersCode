@@ -5,13 +5,12 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 
 Window {
     visible: true
-    width: 640
-    height: 480
+    width: 480
+    height: 640
     title: qsTr("Page and TabBar")
 
     Page {
@@ -21,7 +20,11 @@ Window {
         header: Rectangle{
             width: parent.width
             height: 50
-            color: "red"
+            color: "yellowgreen"
+            Text{
+                text: "Some header text"
+                anchors.centerIn: parent
+            }
         }
 
         SwipeView{
@@ -30,14 +33,17 @@ Window {
             currentIndex: tabBarId.currentIndex
 
             Image{
-                source: "https://www.learnqt.guide/images/qt_quick_fundamentals.png"
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/1.png"
             }
 
             Image{
-                source: "https://www.learnqt.guide/images/qt_quick_intermediate.png"
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/2.png"
             }
             Image{
-                source: "https://www.learnqt.guide/images/qt_quick_advanced.png"
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/3.png"
             }
 
 
