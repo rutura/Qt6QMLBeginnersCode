@@ -2,10 +2,11 @@ cmake_minimum_required(VERSION 3.16)
 
 project(2-Transforms VERSION 0.1 LANGUAGES CXX)
 
-set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
+
+qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(app2-Transforms
     main.cpp
@@ -14,7 +15,7 @@ qt_add_executable(app2-Transforms
 qt_add_qml_module(app2-Transforms
     URI 2-Transforms
     VERSION 1.0
-    QML_FILES main.qml ClickableRect.qml
+    QML_FILES Main.qml ClickableRect.qml
 )
 
 set_target_properties(app2-Transforms PROPERTIES
@@ -25,7 +26,12 @@ set_target_properties(app2-Transforms PROPERTIES
     WIN32_EXECUTABLE TRUE
 )
 
-target_compile_definitions(app2-Transforms
-    PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(app2-Transforms
-    PRIVATE Qt6::Quick)
+    PRIVATE Qt6::Quick
+)
+
+install(TARGETS app2-Transforms
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)

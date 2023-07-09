@@ -53,6 +53,8 @@ Window {
 
         }
 
+
+
         Button {
             text : "Add Item"
             Layout.fillWidth : true
@@ -60,6 +62,8 @@ Window {
                mListModel.append({"firstName": "Daniel", "lastName":"Gakwaya"})
             }
         }
+
+
         Button {
             text : "Clear"
             Layout.fillWidth : true
@@ -68,6 +72,7 @@ Window {
 
             }
         }
+
         Button {
             text : "Delete Item at index 2"
             Layout.fillWidth : true
@@ -79,21 +84,23 @@ Window {
                 }
             }
         }
+
         Button {
-            text : "Set item at index 2"
+            text : "Set item at index 1"
             Layout.fillWidth : true
             onClicked: {
-                mListModel.set(2,{"firstName": "John", "lastName":"Doe"})
+                mListModel.set(1,{"firstName": "John", "lastName":"Doe"})
 
             }
         }
+
     }
 
     Component {
         id : delegateId
         Rectangle {
             id : rectangleId
-            width : mListViewId.width  // Remember to specify these sizes or you'll have problems
+            width : mListViewId.width
             height: 50
             color: "beige"
             border.color: "yellowgreen"

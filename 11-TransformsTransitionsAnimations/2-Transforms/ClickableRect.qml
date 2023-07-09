@@ -1,10 +1,10 @@
-import QtQuick 2.12
+import QtQuick
 
 Rectangle {
-    id : root
+    id : rootId
     signal clicked
     MouseArea {
         anchors.fill: parent
-        onClicked: root.clicked()
+        onClicked: rootId.clicked()
     }
 }

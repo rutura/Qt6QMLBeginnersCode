@@ -13,6 +13,7 @@ import QtQuick
 import QtQuick.Window
 
 Window {
+    id: rootId
     visible: true
     width: 640
     height: 480
@@ -23,12 +24,12 @@ Window {
         anchors.fill: parent
         header: headerId
         footer : Rectangle{
-            width: parent.width
+            width: rootId.width
             height: 50
             color: "dodgerblue"
         }
         highlight: Rectangle{
-            width: parent.width
+            width: rootId.width
             color: "blue"
             radius: 14
             border.color: "yellowgreen"
@@ -38,8 +39,8 @@ Window {
 
         model : ["January","February","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
         delegate: Rectangle {
-            id : rectangleId
-            width: parent.width
+            id : delegateId
+            width: rootId.width
             height: 50
             color: "beige"
             border.color: "yellowgreen"
@@ -66,7 +67,7 @@ Window {
         id : headerId
         Rectangle {
             id : headerRectId
-            width: parent.width
+            width: rootId.width
             height: 50
             color: "yellowgreen"
             border {color: "#9EDDF2"; width: 2}

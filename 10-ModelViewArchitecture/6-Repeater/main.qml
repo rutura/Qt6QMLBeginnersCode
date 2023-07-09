@@ -31,22 +31,26 @@ Window {
             spacing: 2
 
             Repeater {
+                id : repeaterId
 
-                model : 100
-               // model: ["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
+                //model : 15
+                model: ["Jan","Feb","March"]
                 delegate : Rectangle {
                     width: parent.width
                     height: 50
                     color: "dodgerblue"
+
                     Text {
                         anchors.centerIn: parent
                         text: modelData
                         font.pointSize: 20
                     }
+
                     MouseArea{
                         anchors.fill: parent
                         onClicked: {
                             console.log("Clicked on :"+modelData)
+                            console.log("count : " + repeaterId.count)
                         }
                     }
                 }

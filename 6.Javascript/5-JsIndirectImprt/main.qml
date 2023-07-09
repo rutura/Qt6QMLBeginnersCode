@@ -49,8 +49,8 @@ Window {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                console.log("Our ages combined yield :" + Utilities1.combineAges(33,17))
-                // value = Utilities1.add(33,17) //Error
+                //console.log("The ages yield: " + Utilities1.combineAges(33,17))
+                 value = Utilities1.add(33,17) //Error
             }
         }
     }

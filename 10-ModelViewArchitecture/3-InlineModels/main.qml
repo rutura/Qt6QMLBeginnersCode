@@ -11,6 +11,7 @@ import QtQuick
 import QtQuick.Window
 
 Window {
+    id: rootId
     visible: true
     width: 640
     height: 480
@@ -20,10 +21,11 @@ Window {
     ListView {
         id : mListViewId
         anchors.fill: parent
-        model : ["January","February","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
+        //model : ["January","February","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
+        model: 100
         delegate: Rectangle {
             id : rectangleId
-            width: parent.width
+            width: rootId.width
             height: 50
             color: "beige"
             border.color: "yellowgreen"
@@ -44,9 +46,4 @@ Window {
             }
         }
     }
-
-
-
-
-
 }

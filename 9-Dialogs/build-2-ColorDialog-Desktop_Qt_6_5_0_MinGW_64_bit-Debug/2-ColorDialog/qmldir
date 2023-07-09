@@ -1,5 +1,0 @@
-module 2-ColorDialog
-typeinfo app2-ColorDialog.qmltypes
-prefer :/qt/qml/2-ColorDialog/
-Main 1.0 Main.qml
-

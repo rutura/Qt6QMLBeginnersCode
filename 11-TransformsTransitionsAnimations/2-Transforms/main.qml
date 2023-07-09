@@ -14,9 +14,7 @@
   */
 
 
-
 import QtQuick
-import QtQuick.Window
 
 Window {
     visible: true
@@ -35,10 +33,10 @@ Window {
                 rect1Id.x = 50
                 rect2Id.rotation = 0
                 rect3Id.scale = 1
-
             }
         }
     }
+
 
 
     ClickableRect{
@@ -55,11 +53,13 @@ Window {
     }
 
 
+
+
     ClickableRect{
         id : rect2Id
         width: 100
         height: 100
-        //transformOrigin: Item.TopRight
+        transformOrigin: Item.TopRight
         x : 250
         y : 100
         color: "green"
@@ -69,19 +69,20 @@ Window {
         }
     }
 
-
     ClickableRect{
         id : rect3Id
         width: 100
         height: 100
-        //transformOrigin: Item.BottomLeft
+        transformOrigin: Item.BottomLeft
         x : 450
         y : 100
         color: "blue"
         onClicked: {
             //Scaling
             scale += 0.05
-            //rotation += 15
+            //Rotate
+            rotation += 15
         }
     }
+
 }

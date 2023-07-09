@@ -45,7 +45,7 @@ Window {
                 focus: true
                 text : "Type in your first name"
                 onEditingFinished: {
-                    console.log("The first name changed to :"+ text)
+                    console.log("The first name changed to: "+ text)
                 }
 
             }

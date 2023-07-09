@@ -60,8 +60,8 @@ Window {
     GridView{
         id : mGridViewId
         anchors.fill: parent
-        //flow : GridView.FlowTopToBottom
-        //layoutDirection: Qt.RightToLeft
+        flow : GridView.FlowTopToBottom
+        layoutDirection: Qt.RightToLeft
         model: modelId
         delegate: Rectangle {
             width: 100

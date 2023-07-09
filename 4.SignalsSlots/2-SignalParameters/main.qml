@@ -35,12 +35,14 @@ Window {
 
         MouseArea{
             anchors.fill: parent
+
             /*
             onClicked: {
                 //Deprecated
                 console.log(mouse.x)
             }
             */
+
 
             //Explicit Javascript function
             /*
@@ -50,8 +52,9 @@ Window {
             */
 
 
+
              //Arrow function
-            onClicked: (mouse_param) => console.log(mouse_param.x)
+             onClicked: (mouse_param) => console.log(mouse_param.x)
 
         }
     }

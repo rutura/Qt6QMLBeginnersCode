@@ -8,8 +8,8 @@
 
   */
 
-import QtQuick 2.12
-import QtQuick.Window 2.12
+import QtQuick
+import QtQuick.Window
 
 Window {
     visible: true
@@ -35,22 +35,16 @@ Window {
             names : "Kantkl Vikney"; company : "GOOGLE"
         }
         ListElement {
-            names : "Mary Beige"; company : "TENCENT"
+            names : "Mary Beige"; company : "TESLA"
         }
         ListElement {
-            names : "Bamba Pikt"; company : "TENCENT"
+            names : "Bamba Pikt"; company : "TESLA"
         }
         ListElement {
-            names : "Jack May"; company : "APPLE"
+            names : "Jeffery Mor"; company : "SIEMENS"
         }
         ListElement {
-            names : "Brad Mend"; company : "APPLE"
-        }
-        ListElement {
-            names : "Jeffery Mor"; company : "BAIDU"
-        }
-        ListElement {
-            names : "Pick Mo"; company : "BAIDU"
+            names : "Pick Mo"; company : "SIEMENS"
         }
 
     }

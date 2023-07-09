@@ -48,10 +48,22 @@ Window {
         source: "qrc:/xml/employees.xml"
         query: "/courses/course"
 
-        XmlListModelRole { name: "instructor"; elementName: "instructor" }
-        XmlListModelRole { name: "year"; elementName: "year" }
-        XmlListModelRole { name: "coursename"; elementName: "coursename" }
-        XmlListModelRole { name: "hot"; elementName: "coursename"; attributeName: "hot" }
+        XmlListModelRole {
+            name: "instructor"
+            elementName: "instructor"
+        }
+        XmlListModelRole {
+            name: "year"
+            elementName: "year"
+        }
+        XmlListModelRole {
+            name: "coursename"
+            elementName: "coursename"
+        }
+        XmlListModelRole { name: "hot"
+            elementName: "coursename"
+            attributeName: "hot"
+        }
     }
 
     ListView{

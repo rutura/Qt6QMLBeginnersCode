@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-49651dde0a057bed5530.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "3-PropertyBinding",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-c46144d57226ecc0d373.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-fe3ee9fbb0decffe7d9d.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-4030613c71df5bc495d2.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-afea08931d1b0f0e366b.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding-Debug-0011dbbc913bf12a377c.json",
+					"name" : "app3-PropertyBinding",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_autogen-Debug-6141a246525ecbf45662.json",
+					"name" : "app3-PropertyBinding_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_autogen_timestamp_deps-Debug-b6b7287825937d96c42d.json",
+					"name" : "app3-PropertyBinding_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_qmlimportscan-Debug-1cbb08da967a9b59400d.json",
+					"name" : "app3-PropertyBinding_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_qmllint-Debug-16969926b4f1523398b3.json",
+					"name" : "app3-PropertyBinding_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_qmllint_json-Debug-185e0c7a8bf86a675d5a.json",
+					"name" : "app3-PropertyBinding_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_qmllint_module-Debug-897a9850622db28903f9.json",
+					"name" : "app3-PropertyBinding_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_qmltyperegistration-Debug-d3f8d864e4093006df4a.json",
+					"name" : "app3-PropertyBinding_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app3-PropertyBinding_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app3-PropertyBinding_tooling-Debug-c59e3e3e3fb7b1833314.json",
+					"name" : "app3-PropertyBinding_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-PropertyBinding-Desktop_Qt_6_5_0_MinGW_64_bit-Debug",
+		"source" : "F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/3-PropertyBinding"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -10,6 +10,9 @@
 
        . Improvise.
 
+       . This lecture sets up animations through property value sources:
+            . the syntax NumberAnimation on ...
+
   */
 
 import QtQuick

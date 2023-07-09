@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-b9160bd79d9d317835e2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "1-SyntaxOverview",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-6f2b5d4ace45f3915cac.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-802438fa9dfff1b38a40.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-88fa7bebb9abed544b97.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-384851f877ec5c193035.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview-Debug-82e2e14bb15f48e7ad46.json",
+					"name" : "app1-SyntaxOverview",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_autogen-Debug-b8f597defc98164d1732.json",
+					"name" : "app1-SyntaxOverview_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_autogen_timestamp_deps-Debug-49f021bfa94f3f76b55a.json",
+					"name" : "app1-SyntaxOverview_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_qmlimportscan-Debug-f2e3efce823105baeb79.json",
+					"name" : "app1-SyntaxOverview_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_qmllint-Debug-4d57d4542825804958db.json",
+					"name" : "app1-SyntaxOverview_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_qmllint_json-Debug-5b2d0ded81f06ea4650b.json",
+					"name" : "app1-SyntaxOverview_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_qmllint_module-Debug-d6f9b8bb8f1a69e1df06.json",
+					"name" : "app1-SyntaxOverview_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_qmltyperegistration-Debug-430bf2b8c6af0b1e57cf.json",
+					"name" : "app1-SyntaxOverview_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app1-SyntaxOverview_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app1-SyntaxOverview_tooling-Debug-3372a94c8976a58f0e01.json",
+					"name" : "app1-SyntaxOverview_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-1-SyntaxOverview-Desktop_Qt_6_5_0_MinGW_64_bit-Debug",
+		"source" : "F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/1-SyntaxOverview"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

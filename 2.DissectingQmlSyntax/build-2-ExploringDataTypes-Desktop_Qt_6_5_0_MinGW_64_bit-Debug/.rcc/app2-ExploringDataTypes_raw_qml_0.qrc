@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/2-ExploringDataTypes/">
+    <file alias="Main.qml">F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/2-ExploringDataTypes/Main.qml</file>
+  </qresource>
+</RCC>
+

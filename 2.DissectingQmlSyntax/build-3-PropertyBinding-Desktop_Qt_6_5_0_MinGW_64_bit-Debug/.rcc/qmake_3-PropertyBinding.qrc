@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/3-PropertyBinding">
+    <file alias="qmldir">F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-PropertyBinding-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/3-PropertyBinding/qmldir</file>
+  </qresource>
+</RCC>
+

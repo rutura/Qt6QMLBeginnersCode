@@ -84,7 +84,7 @@ Window {
         */
 
 
-
+        /*
         Keys.onDigit5Pressed:function(event) {
            if ( event.modifiers === Qt.ControlModifier)
            {
@@ -95,17 +95,16 @@ Window {
            event.accepted = false
 
         }
+        */
 
 
 
 
         Keys.onPressed: function(event){
-            if ( (event.key ===Qt.Key_5)&& !(event.modifiers & Qt.ControlModifier))
-            {
-                 console.log("General Signal: Pressed on Key 5")
-            }
             if ((event.key === Qt.Key_5) && (event.modifiers & Qt.ControlModifier)){
                 console.log("General Signal: Pressed Control + 5")
+            }else if(event.key === Qt.Key_5){
+                console.log("General Signal: Key 5 was pressed alone.")
             }
         }
     }

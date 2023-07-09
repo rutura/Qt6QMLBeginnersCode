@@ -1,0 +1,14 @@
+-rootPath
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/3-PropertyBinding
+-cmake-output
+-output-file
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-PropertyBinding-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_app3-PropertyBinding.cmake
+-importPath
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-PropertyBinding-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/3-PropertyBinding
+-importPath
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-PropertyBinding-Desktop_Qt_6_5_0_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.5.0/mingw_64/./qml
+-qrcFiles
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-PropertyBinding-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/.rcc/qmake_3-PropertyBinding.qrc
+F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/build-3-PropertyBinding-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/.rcc/app3-PropertyBinding_raw_qml_0.qrc

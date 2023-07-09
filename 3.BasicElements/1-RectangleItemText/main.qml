@@ -28,7 +28,7 @@ Window {
 
     Item {
         id : containerItemId
-        x : 150 ;y : 50
+        x : 50 ; y : 50
         width: 400
         height: 200
 
@@ -52,9 +52,12 @@ Window {
             */
 
             //Grouped Property Syntax Variation #3
+
             border{
-                color : "black";width : 5
+                color : "black"
+                //width : 5
             }
+
         }
 
         Rectangle{
@@ -115,6 +118,7 @@ Window {
             }
         }
         */
+        /*
         Text {
             x : 100
             y : 100
@@ -134,6 +138,7 @@ Window {
 
             color: "red"
         }
+        */
 
     }
 }

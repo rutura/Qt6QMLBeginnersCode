@@ -1,0 +1,5 @@
+module 1-SyntaxOverview
+typeinfo app1-SyntaxOverview.qmltypes
+prefer :/qt/qml/1-SyntaxOverview/
+Main 1.0 Main.qml
+

@@ -58,7 +58,7 @@ Window {
 
 
     Rectangle {
-        id : dragContaierId
+        id : dragContainerId
         width : parent.width
         height: 200
         color: "beige"
@@ -80,7 +80,7 @@ Window {
             drag.target: draggableRect
             drag.axis: Drag.XAxis
             drag.minimumX: 0
-            drag.maximumX: dragContaierId.width - draggableRect.width
+            drag.maximumX: dragContainerId.width - draggableRect.width
 
         }
 

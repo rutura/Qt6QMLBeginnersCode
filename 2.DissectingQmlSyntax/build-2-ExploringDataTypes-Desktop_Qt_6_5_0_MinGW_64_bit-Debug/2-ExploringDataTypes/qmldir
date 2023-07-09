@@ -1,0 +1,5 @@
+module 2-ExploringDataTypes
+typeinfo app2-ExploringDataTypes.qmltypes
+prefer :/qt/qml/2-ExploringDataTypes/
+Main 1.0 Main.qml
+
