@@ -1,5 +1,0 @@
-module 3-PropertyBinding
-typeinfo app3-PropertyBinding.qmltypes
-prefer :/qt/qml/3-PropertyBinding/
-Main 1.0 Main.qml
-

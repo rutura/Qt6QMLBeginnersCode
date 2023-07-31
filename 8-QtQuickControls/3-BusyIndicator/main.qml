@@ -42,8 +42,7 @@ Window {
             id : busyIndicatorId
             Layout.alignment: Qt.AlignHCenter
             running: false
-            visible: false
-
+            //visible: false
         }
 
         ColumnLayout {
@@ -53,7 +52,7 @@ Window {
                 Layout.fillWidth: true
                 onClicked: {
                     busyIndicatorId.running = true
-                    busyIndicatorId.visible = true
+                    //busyIndicatorId.visible = true
 
                 }
             }
@@ -64,7 +63,7 @@ Window {
                 Layout.fillWidth: true
                 onClicked: {
                     busyIndicatorId.running = false
-                    busyIndicatorId.visible = false
+                    //busyIndicatorId.visible = false
 
                 }
             }

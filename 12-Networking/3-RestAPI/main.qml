@@ -17,7 +17,6 @@
   */
 
 import QtQuick
-import QtQuick.Window
 import QtQuick.Controls
 import QtQuick.Layouts
 
@@ -62,14 +61,14 @@ Window {
         ListView{
             id : mListViewId
             model: mListModelId
-            delegate: delegateId
+            delegate: mDelegateId
             Layout.fillWidth: true
             Layout.fillHeight: true
 
         }
 
         Button{
-            id : buttonId
+            id : mButtonId
             Layout.fillWidth: true
             text : "Fetch"
             onClicked: {
@@ -87,18 +86,14 @@ Window {
                     }else{
                         console.log("Something went wrong")
                     }
-
-
                 })
-
-
             }
 
 
         }
 
         Component {
-            id : delegateId
+            id : mDelegateId
             Rectangle {
                 id : rectangleId
                 width : parent.width
@@ -112,20 +107,14 @@ Window {
                     height: parent.height
                     id : textId
                     anchors.centerIn: parent
-                    //text : userdata //Or modelData
-                    text : modelData
+                    text : userdata //Or modelData
+                    //text : modelData
                     font.pointSize: 13
                     wrapMode: Text.WordWrap
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
                 }
-
             }
-
-
-
         }
-
     }
-
 }

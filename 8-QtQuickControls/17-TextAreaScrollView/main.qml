@@ -40,7 +40,6 @@ Window {
             height: 150
             TextArea {
                 id : textAreaId
-
                 font.pointSize: 15
                 wrapMode: TextArea.WordWrap
                 placeholderText: "Type in your query"

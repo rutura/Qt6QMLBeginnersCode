@@ -32,9 +32,8 @@
 
   */
 import QtQuick
-import QtQuick.Window
 import QtQuick.Dialogs
- import Qt.labs.settings
+import QtCore
 
 Window {
     id : rootId

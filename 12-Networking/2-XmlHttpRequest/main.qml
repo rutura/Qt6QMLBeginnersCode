@@ -33,6 +33,7 @@ Window {
 
                 if( xhr.status == 200){
                     console.log("Resource found")
+                    //Don't process the response right away, delegate that to the callback
                     callback(xhr.responseText.toString())
                 }else{
                     console.log("Resource not found")
@@ -47,11 +48,14 @@ Window {
 
 
 
-/*
     //Process the data right away
-
+    /*
     function downloadData(url){
+
+        //Create the object
         var xhr = new XMLHttpRequest();
+
+        //Apply initial settings to the object
         xhr.onreadystatechange = function(){
             //XMLHttpRequest.HEADERS_RECEIVED
             //XMLHttpRequest.DONE
@@ -60,17 +64,19 @@ Window {
             }else if(xhr.readyState === XMLHttpRequest.DONE ){
                 if( xhr.status == 200){
                     //console.log("Got the data , it is : " + xhr.responseText.toString())
-                    textAreaId.text = xhr.responseText.toString();
+                    //textAreaId.text = xhr.responseText.toString();
+                    console.log(xhr.responseText.toString())
                 }else{
                     console.log("Something went wrong")
                 }
             }
         }
-        //Kick off the download
+        //Start the download
         xhr.open("GET",url)
         xhr.send()
     }
     */
+
 
 
 
@@ -92,23 +98,19 @@ Window {
               */
 
             //Process the data right away
-            //downloadData("http://www.icndb.com/")
+            //downloadData("https://www.qt.io/")
 
             //Using callback
             downloadData("https://jsonplaceholder.typicode.com/", function(response){
                 if ( response)
                 {
                     textAreaId.text = response
-
                 }else{
                     //null
                     textAreaId.text = "Some error"
                 }
-
             })
+
         }
     }
-
-
-
 }

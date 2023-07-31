@@ -1,24 +1,25 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQuickStyle>
 
 
 int main(int argc, char *argv[])
 {
+
     QGuiApplication app(argc, argv);
 
+    QQuickStyle::setStyle("Basic");
+
     //App Information
-    app.setOrganizationName("LearnQt1");
-    app.setOrganizationDomain("learnqt1.guide");
-    app.setApplicationName("SettingsDemo1");
+    app.setOrganizationName("LearnQt2");
+    app.setOrganizationDomain("learnqts.guide");
+    app.setApplicationName("SettingsDemos");
 
     QQmlApplicationEngine engine;
-    const QUrl url(u"qrc:/3-SettingsCustom/main.qml"_qs);
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,
+        &app, []() { QCoreApplication::exit(-1); },
+        Qt::QueuedConnection);
+    engine.loadFromModule("3-SettingsCustom", "Main");
 
     return app.exec();
 }

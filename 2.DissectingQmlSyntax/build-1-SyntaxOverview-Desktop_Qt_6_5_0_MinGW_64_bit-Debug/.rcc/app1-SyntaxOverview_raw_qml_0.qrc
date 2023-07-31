@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/1-SyntaxOverview/">
-    <file alias="Main.qml">F:/OnlineCourses/Qt6QMLForBeginners/2.DissectingQmlSyntax/1-SyntaxOverview/Main.qml</file>
-  </qresource>
-</RCC>
-

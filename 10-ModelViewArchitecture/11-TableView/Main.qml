@@ -70,7 +70,6 @@ ApplicationWindow {
 
         model: tableModelId
 
-
         /*
         delegate:  TextInput {
             text: model.display
@@ -86,6 +85,7 @@ ApplicationWindow {
             }
         }
         */
+
 
         delegate: DelegateChooser {
             DelegateChoice {
@@ -111,6 +111,7 @@ ApplicationWindow {
                 }
             }
         }
+
 
     }
 
