@@ -15,8 +15,7 @@
 import QtQuick
 
 Window {
-
-    id : rootId
+    id: rootId
     visible: true
     width: 640
     height: 480
@@ -25,12 +24,12 @@ Window {
     property string textToShow: "hello"
 
     Row {
-        id : row1
+        id: row1
         anchors.centerIn: parent
         spacing: 20
 
         Rectangle {
-            id : redRectId
+            id: redRectId
             width: 100; height: 100
             color: "red"
             radius: 20
@@ -41,11 +40,10 @@ Window {
                     textToShow = "red"
                 }
             }
-
         }
 
         Rectangle {
-            id : greenRectId
+            id: greenRectId
             width: 100; height: 100
             color: "green"
             radius: 20
@@ -56,10 +54,10 @@ Window {
                     textToShow = "green"
                 }
             }
-
         }
+
         Rectangle {
-            id : blueRectId
+            id: blueRectId
             width: 100; height: 100
             color: "blue"
             radius: 20
@@ -70,31 +68,26 @@ Window {
                     textToShow = "blue"
                 }
             }
-
         }
 
         Rectangle {
-            id : textRectId
+            id: textRectId
             width: 100; height: 100
             color: "dodgerblue"
             radius: 100
             Text {
-                id : textId
+                id: textId
                 anchors.centerIn: parent
-                text : textToShow
+                text: textToShow
             }
-
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
                     console.log("Clicked on the dodgerblue rectangle")
                     textId.text = "broken"
-
                 }
             }
-
         }
-
     }
-
 }
+

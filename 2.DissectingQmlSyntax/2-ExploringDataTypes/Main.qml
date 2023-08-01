@@ -12,7 +12,6 @@
 
 import QtQuick
 
-
 Window {
     visible: true
     width: 640
@@ -38,7 +37,7 @@ Window {
     property var anObject: { "foo": 10, "bar": 20 }
     property var aFunction: (function() { return "one"; })
 
-    property var aFont  : Qt.font({family: "Consolas", pointSize: 30, bold: false})
+    property var aFont: Qt.font({family: "Consolas", pointSize: 30, bold: false})
     property date mDate: "2018-07-19"
 
     Rectangle {
@@ -51,41 +50,39 @@ Window {
             id: mTextId
             anchors.centerIn: parent
             text: mString
-            font.bold: isFemale?true:false
-            //font : aFont
+            font.bold: isFemale ? true : false
+            //font: aFont
         }
     }
 
     Component.onCompleted: {
-        //console.log("The value of mString is :" + mString)
-        print("The value of mString is :"+mString)
-        console.log("The value of mInt is :"+mInt)
+        //console.log("The value of mString is: " + mString)
+        print("The value of mString is: " + mString)
+        console.log("The value of mInt is: " + mInt)
 
-        if ( isFemale){
+        if (isFemale) {
             console.log("You may wear a dress")
-        }else{
+        } else {
             console.log("You may wear a suit")
         }
-        console.log("The value of mDouble is :" + mDouble)
-        console.log("The value of mUrl is :"+ mUrl)
+        console.log("The value of mDouble is: " + mDouble)
+        console.log("The value of mUrl is: " + mUrl)
 
-        if ( mString == mUrl)
-        {
+        if (mString == mUrl) {
             console.log("They are the same")
-        }else{
+        } else {
             console.log("They are NOT the same")
         }
 
         console.log("-----------------Playing with var datatype---------------")
-        console.log("The value of aNumber is :"+ aNumber)
-        console.log("The value of aBool is : " + aBool)
-        console.log("The value of aString is : " + aString)
-        console.log("The value of anotherString is : " + anotherString)
+        console.log("The value of aNumber is: " + aNumber)
+        console.log("The value of aBool is: " + aBool)
+        console.log("The value of aString is: " + aString)
+        console.log("The value of anotherString is: " + anotherString)
 
-        console.log("The components of aRect are : x : "+ aRect.x
-                    + " y :"+ aRect.y + " width :" + aRect.width + " height :"+ aRect.height)
+        console.log("The components of aRect are x:" + aRect.x + ", y:" + aRect.y + ", width:" + aRect.width + ", height:" + aRect.height)
 
-        console.log("The length of the array is :"+anArray.length)
+        console.log("The length of the array is: " + anArray.length)
 
         /*
         anArray.forEach(function(value,index){
@@ -97,18 +94,17 @@ Window {
             }})
         */
 
-        for(var i = 0; i < anArray.length ; i++)
-        {
-            if ( i === 5)
-            {
+        for (var i = 0; i < anArray.length; i++) {
+            if (i === 5) {
                 console.log(anArray[i]())
-            }else{
+            } else {
                 console.log(anArray[i])
             }
         }
 
-        console.log("The date is :"+ mDate)
+        console.log("The date is: " + mDate)
 
-        console.log("The function value is :"+aFunction())
+        console.log("The function value is: " + aFunction())
     }
 }
+
