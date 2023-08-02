@@ -55,11 +55,11 @@ Window {
 
 
         ListModel{
-            id : mListModelId
+            id: mListModelId
         }
 
         ListView{
-            id : mListViewId
+            id: mListViewId
             model: mListModelId
             delegate: mDelegateId
             Layout.fillWidth: true
@@ -68,9 +68,9 @@ Window {
         }
 
         Button{
-            id : mButtonId
+            id: mButtonId
             Layout.fillWidth: true
-            text : "Fetch"
+            text: "Fetch"
             onClicked: {
                 fetchData("https://jsonplaceholder.typicode.com/users", function(response){
                     if ( response){
@@ -93,9 +93,9 @@ Window {
         }
 
         Component {
-            id : mDelegateId
+            id: mDelegateId
             Rectangle {
-                id : rectangleId
+                id: rectangleId
                 width : parent.width
                 height: textId.implicitHeight+30
                 color: "beige"
@@ -103,12 +103,12 @@ Window {
                 radius: 5
 
                 Text {
-                    width : parent.width
+                    width: parent.width
                     height: parent.height
-                    id : textId
+                    id: textId
                     anchors.centerIn: parent
-                    text : userdata //Or modelData
-                    //text : modelData
+                    text: userdata //Or modelData
+                    //text: modelData
                     font.pointSize: 13
                     wrapMode: Text.WordWrap
                     verticalAlignment: Text.AlignVCenter

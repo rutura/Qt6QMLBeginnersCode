@@ -81,7 +81,7 @@ Window {
 
 
     TextArea{
-        id : textAreaId
+        id: textAreaId
         anchors.fill: parent
         textFormat: TextArea.RichText
         text: "Html Data here"
