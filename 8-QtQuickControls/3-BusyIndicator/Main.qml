@@ -39,7 +39,7 @@ Window {
         //height: parent.height
 
         BusyIndicator{
-            id : busyIndicatorId
+            id: busyIndicatorId
             Layout.alignment: Qt.AlignHCenter
             running: false
             //visible: false
@@ -47,8 +47,8 @@ Window {
 
         ColumnLayout {
             Button{
-                id : button1
-                text : "Running"
+                id: button1
+                text: "Running"
                 Layout.fillWidth: true
                 onClicked: {
                     busyIndicatorId.running = true
@@ -58,8 +58,8 @@ Window {
             }
 
             Button {
-                id : button2
-                text  : "Not Running"
+                id: button2
+                text: "Not Running"
                 Layout.fillWidth: true
                 onClicked: {
                     busyIndicatorId.running = false

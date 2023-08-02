@@ -38,11 +38,11 @@ Window {
         }
 
         ComboBox {
-            id : nonEditableComboId
-            model: ["One","Two","Three","Four"]
+            id: nonEditableComboId
+            model: ["One", "Two", "Three", "Four"]
             //anchors.horizontalCenter: parent.horizontalCenter
             onActivated: {
-                console.log("[" + currentIndex +"]" + currentText + " is activated")
+                console.log("[" + currentIndex +"] " + currentText + " is activated")
             }
             Layout.fillWidth: true
 
@@ -58,21 +58,21 @@ Window {
         }
 
         ComboBox {
-            id : editableComboId
+            id: editableComboId
             editable: true
             textRole : "text"
             Layout.fillWidth: true
             model: ListModel {
                 id : model
-                ListElement { text: "Dog";location:"Kigali" }
-                ListElement { text: "Chicken";location : "Beijing" }
+                ListElement { text: "Dog"; location:"Kigali" }
+                ListElement { text: "Chicken"; location : "Beijing" }
                 ListElement { text: "Cat" ; location : "Mumbai" }
                 ListElement { text: "Meerkat" ; location : "Paris" }
             }
 
 
             onActivated: {
-                console.log("[" + currentIndex +"]" + currentText + " is activated")
+                console.log("[" + currentIndex +"] " + currentText + " is activated")
             }
 
             onAccepted: {
@@ -89,11 +89,10 @@ Window {
             text : "Capture current element"
             Layout.fillWidth: true
             onClicked: {
-                console.log("["  + model.get(editableComboId.currentIndex).text   +"] :" +
+                console.log("["  + model.get(editableComboId.currentIndex).text   +"]: " +
                              model.get(editableComboId.currentIndex).location)
             }
         }
-
 
         Item{
             Layout.fillWidth: true

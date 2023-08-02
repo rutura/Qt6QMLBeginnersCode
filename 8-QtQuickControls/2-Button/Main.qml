@@ -53,7 +53,7 @@ Window {
         anchors.right: parent.right
 
         Button {
-            id : button1
+            id: button1
             text: "Button1"
             Layout.fillWidth: true
             onClicked: {
@@ -61,7 +61,7 @@ Window {
             }
         }
         Button{
-            id : button2
+            id: button2
             text : "Button2"
             Layout.fillWidth: true
             onClicked: {

@@ -20,7 +20,7 @@ Window {
 
         Switch{
             anchors.horizontalCenter: parent.horizontalCenter
-            text : "WiFi"
+            text: "WiFi"
             checked: true
             onCheckedChanged: {
                 if(checked)
@@ -33,11 +33,11 @@ Window {
         }
         Switch{
             anchors.horizontalCenter: parent.horizontalCenter
-            text : "Bluetooth"
+            text: "Bluetooth"
         }
         Switch{
             anchors.horizontalCenter: parent.horizontalCenter
-            text : "NFC"
+            text: "NFC"
             enabled: false
         }
     }

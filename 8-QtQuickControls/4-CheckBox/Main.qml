@@ -20,7 +20,7 @@ Window {
         anchors.horizontalCenter: parent.horizontalCenter
 
         CheckBox {
-            text : "Option1"
+            text: "Option1"
             checked: true
             onCheckStateChanged: {
                 if (checked)
@@ -32,10 +32,10 @@ Window {
             }
         }
         CheckBox {
-            text : "Option2"
+            text: "Option2"
         }
         CheckBox {
-            text : "Option3"
+            text: "Option3"
             checked: false
             enabled: false
         }

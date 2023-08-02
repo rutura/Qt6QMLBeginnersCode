@@ -21,8 +21,8 @@ Window {
         Slider {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            from : 1
-            to : 100
+            from: 1
+            to: 100
             value: 40
             onValueChanged: {
                 progressBarId.value = value
@@ -32,9 +32,9 @@ Window {
         ProgressBar {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            id : progressBarId
+            id: progressBarId
             from : 1
-            to : 100
+            to: 100
             value: 40
 
         }

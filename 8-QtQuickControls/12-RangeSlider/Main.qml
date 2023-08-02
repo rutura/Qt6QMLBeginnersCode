@@ -17,20 +17,18 @@ Window {
         spacing: 40
         width: parent.width
 
-
         RangeSlider{
             //orientation: Qt.Vertical
             from: 1
-            to : 100
+            to: 100
             first.value: 25
-
             second.value: 75
 
             first.onValueChanged: {
-                console.log("First value changed to : "+ first.value)
+                console.log("First value changed to: "+ first.value)
             }
             second.onValueChanged: {
-                console.log("Second value changed to :"+ second.value)
+                console.log("Second value changed to: "+ second.value)
             }
         }
     }

@@ -33,7 +33,7 @@ Window {
             Column{
 
                 RadioButton{
-                    text : "Coke"
+                    text: "Coke"
                     onCheckedChanged: {
                         if( checked){
                             console.log("Coke button checked")
@@ -43,10 +43,10 @@ Window {
                     }
                 }
                 RadioButton{
-                    text : "Green Tea"
+                    text: "Green Tea"
                 }
                 RadioButton{
-                    text : "Ice Cream"
+                    text: "Ice Cream"
                 }
             }
         }
@@ -66,7 +66,7 @@ Window {
             Column{
 
                 CheckBox{
-                    text : "Windows"
+                    text: "Windows"
                     onCheckedChanged: {
                         if( checked){
                             console.log("Windows button checked")
@@ -76,10 +76,10 @@ Window {
                     }
                 }
                 CheckBox{
-                    text : "Mac"
+                    text: "Mac"
                 }
                 CheckBox{
-                    text : "Linux"
+                    text: "Linux"
                 }
             }
         }

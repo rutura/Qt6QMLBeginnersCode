@@ -34,12 +34,12 @@ Window {
 
 
         ScrollView{
-            id : scrollView
+            id: scrollView
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             height: 150
             TextArea {
-                id : textAreaId
+                id: textAreaId
                 font.pointSize: 15
                 wrapMode: TextArea.WordWrap
                 placeholderText: "Type in your query"
@@ -54,10 +54,10 @@ Window {
 
 
         Button{
-            text : "Submit"
+            text: "Submit"
              anchors.horizontalCenter: parent.horizontalCenter
              onClicked: {
-                 console.log("The text inside the TextArea is : "+ textAreaId.text)
+                 console.log("The text inside the TextArea is: "+ textAreaId.text)
                  textAreaId.text = textAreaId.text + "sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facili1111"
              }
         }

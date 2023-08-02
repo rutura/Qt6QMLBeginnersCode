@@ -14,7 +14,7 @@ Window {
     title: qsTr("Page and TabBar")
 
     Page {
-        id : pageId
+        id: pageId
         anchors.fill: parent
 
         header: Rectangle{
@@ -28,7 +28,7 @@ Window {
         }
 
         SwipeView{
-            id : swipeViewId
+            id: swipeViewId
             anchors.fill: parent
             currentIndex: tabBarId.currentIndex
 
@@ -50,17 +50,17 @@ Window {
         }
 
         footer: TabBar{
-            id : tabBarId
+            id: tabBarId
             currentIndex: swipeViewId.currentIndex
 
             TabButton{
-                text : "First"
+                text: "First"
             }
             TabButton{
-                text : "Second"
+                text: "Second"
             }
             TabButton{
-                text : "Third"
+                text: "Third"
             }
         }
     }

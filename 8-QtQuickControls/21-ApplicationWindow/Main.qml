@@ -28,7 +28,7 @@ ApplicationWindow {
         Menu {
             title: qsTr("&File")
             Action {
-                id : newActionId
+                id: newActionId
                 text: qsTr("&New")
                 icon.source: "qrc:/images/newFileIcon.png"
                 onTriggered: {
@@ -38,25 +38,25 @@ ApplicationWindow {
 
 
             Action {
-                id : openActionId
+                id: openActionId
                 text: qsTr("&Open...")
                 icon.source: "qrc:/images/openIcon.png"
 
             }
             Action {
-                id : saveActionId
+                id: saveActionId
                 text: qsTr("&Save")
                 icon.source: "qrc:/images/saveIcon.png"
             }
             Action {
-                id : saveAsActionId
+                id: saveAsActionId
                 text: qsTr("Save &As...")
                 icon.source: "qrc:/images/saveAsIcon.png"
             }
 
             MenuSeparator{}
             Action {
-                id : quitActionId
+                id: quitActionId
                 text: qsTr("Quit")
                 icon.source: "qrc:/images/quitIcon.png"
                 onTriggered: Qt.quit()
@@ -66,7 +66,7 @@ ApplicationWindow {
 
         Menu {
             title: qsTr("&Edit")
-            Action {id : cutMenuId; icon.source: "qrc:/images/cutIcon.png"; text: qsTr("Cut") }
+            Action {id: cutMenuId; icon.source: "qrc:/images/cutIcon.png"; text: qsTr("Cut") }
             Action {
                 text: qsTr("Copy")
                 icon.source: "qrc:/images/copyIcon.png"
@@ -105,7 +105,7 @@ ApplicationWindow {
     }
 
     footer: TabBar {
-        id : mTabBar
+        id: mTabBar
         width: parent.width
 
         TabButton {

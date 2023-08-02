@@ -27,12 +27,12 @@ Window {
         Dial{
             anchors.horizontalCenter: parent.horizontalCenter
             from: 1
-            to : 100
+            to: 100
             value: 50
             wrap: true
 
             onValueChanged: {
-                console.log(" Current value : " + Math.ceil(value))
+                console.log(" Current value: " + Math.ceil(value))
             }
 
         }

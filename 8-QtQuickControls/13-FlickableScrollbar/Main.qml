@@ -28,7 +28,7 @@ Window {
 
 
         Column{
-            id : mColumnId
+            id: mColumnId
             anchors.fill: parent
 
             Rectangle {
@@ -39,7 +39,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 1"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
 
@@ -52,7 +52,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 2"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
 
@@ -64,7 +64,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 3"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
 
@@ -76,7 +76,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 4"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
             Rectangle {
@@ -87,7 +87,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 5"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
             /*
@@ -99,7 +99,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 6"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
             Rectangle {
@@ -110,7 +110,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 7"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
             Rectangle {
@@ -121,7 +121,7 @@ Window {
                     anchors.centerIn: parent
                     text: "Element 8"
                     font.pointSize: 30
-                    color : "white"
+                    color: "white"
                 }
             }
             */

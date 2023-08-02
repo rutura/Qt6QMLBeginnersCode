@@ -23,9 +23,8 @@ Window {
         width: parent.width
         spacing: 20
 
-
         Button {
-            text : "Start"
+            text: "Start"
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
                 progressBarId.value = 78
@@ -34,10 +33,10 @@ Window {
 
 
         Dial {
-            id : dialId
+           id: dialId
            from : 1
-           to : 100
-           value : 40
+           to: 100
+           value: 40
            anchors.horizontalCenter: parent.horizontalCenter
            onValueChanged: {
                progressBarId.value = value
@@ -46,18 +45,17 @@ Window {
         }
 
 
-
         ProgressBar {
-            id : progressBarId
-           from : 1
-           to : 100
-           value : 40
+           id: progressBarId
+           from: 1
+           to: 100
+           value: 40
            anchors.horizontalCenter: parent.horizontalCenter
 
         }
 
         ProgressBar {
-            id : progressBarId1
+            id: progressBarId1
             indeterminate: true
            anchors.horizontalCenter: parent.horizontalCenter
         }

@@ -60,7 +60,7 @@ ApplicationWindow {
     }
 
     Drawer {
-        id : drawerId
+        id: drawerId
         width: Math.min(rootId.width,rootId.height) * (2/3)
         height: rootId.height
         interactive: true
