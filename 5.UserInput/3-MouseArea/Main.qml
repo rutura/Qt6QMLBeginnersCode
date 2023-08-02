@@ -17,13 +17,13 @@ Window {
     title: qsTr("MouseArea Demo")
 
     Rectangle {
-        id : containerRectId
-        width : parent.width
+        id: containerRectId
+        width: parent.width
         height: 200
         color: "beige"
 
         Rectangle {
-            id : movingRectId
+            id: movingRectId
             width: 50
             height: width
             color: "blue"
@@ -39,7 +39,7 @@ Window {
             }
 
             onWheel:function(wheel) {
-                console.log(" X : "+ wheel.x + " y : "+ wheel.y + " angleData :"+ wheel.angleDelta)
+                console.log(" x: "+ wheel.x + ", y: "+ wheel.y + ", angleData: "+ wheel.angleDelta)
             }
 
             hoverEnabled: true
@@ -50,41 +50,36 @@ Window {
                 }else {
                     containerRectId.color = "green"
                 }
-
             }
         }
-
     }
 
 
     Rectangle {
-        id : dragContainerId
+        id: dragContainerId
         width : parent.width
         height: 200
         color: "beige"
-        y : 250
+        y: 250
 
         Rectangle {
-            id : draggableRect
+            id: draggableRect
             width: 50
             height: width
             color: "blue"
 
             onXChanged: {
-                console.log("X Coordinate is : "+ x)
+                console.log("x coordinate is: "+ x)
             }
         }
 
         MouseArea{
-            anchors.fill : parent
+            anchors.fill: parent
             drag.target: draggableRect
             drag.axis: Drag.XAxis
             drag.minimumX: 0
             drag.maximumX: dragContainerId.width - draggableRect.width
 
         }
-
-
     }
-
 }

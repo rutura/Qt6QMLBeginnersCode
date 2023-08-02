@@ -33,7 +33,7 @@ Window {
 
         /*
         TextEdit {
-            id : textInputId
+            id: textInputId
             width: 240
             anchors.centerIn: parent
 
@@ -47,13 +47,13 @@ Window {
             focus: true
 
             onEditingFinished: {
-                console.log("The current text is :"+ text)
+                console.log("The current text is: "+ text)
             }
         }
         */
 
     TextEdit {
-        id : textInputId
+        id: textInputId
         wrapMode: TextEdit.Wrap
         textFormat: TextEdit.RichText
         width: 240
@@ -66,13 +66,13 @@ Window {
         focus: true
 
         onEditingFinished: {
-            console.log("The current text is :"+ text)
+            console.log("The current text is: "+ text)
         }
     }
 
 
     Rectangle {
-        id : mRectId
+        id: mRectId
         width: 240
         height: 100
         color: "red"
@@ -80,7 +80,7 @@ Window {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-              console.log("The new text is :"+textInputId.text)
+              console.log("The new text is: "+textInputId.text)
             }
         }
     }

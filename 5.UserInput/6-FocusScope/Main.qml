@@ -27,7 +27,6 @@
 
   */
 
-
 import QtQuick
 
 Window {
@@ -36,16 +35,14 @@ Window {
     height: 480
     title: qsTr("FocusScope Demo")
 
-
     Column {
         MButton{
            color: "yellow"
            focus: true
-
         }
+
         MButton{
             color: "green"
         }
     }
-
 }

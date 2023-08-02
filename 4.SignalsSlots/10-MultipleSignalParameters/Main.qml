@@ -53,7 +53,7 @@ Window {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                info("John","Snow",33)
+                info("John", "Snow", 33)
             }
         }
     }

@@ -16,8 +16,6 @@ Window {
     height: 480
     title: qsTr("Key Navigation Demo")
 
-
-
     Grid {
           anchors.centerIn: parent
           columns: 2
@@ -70,7 +68,7 @@ Window {
         anchors.centerIn: parent
 
         Rectangle{
-            id : firstRectId
+            id: firstRectId
             width: 200
             height: width
             border.color: "black"
@@ -88,7 +86,7 @@ Window {
         }
 
         Rectangle{
-            id : secondRectId
+            id: secondRectId
             width: 200
             height: width
             border.color: "black"
@@ -97,7 +95,6 @@ Window {
                 color = focus?"red":"gray"
             }
 
-
             Keys.onDigit5Pressed: {
                 console.log("I am Rect2")
             }
@@ -105,6 +102,4 @@ Window {
         }
     }
     */
-
-
 }
