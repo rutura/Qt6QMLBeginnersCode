@@ -35,24 +35,24 @@ Window {
 //    property bool running: false
 
     Rectangle {
-        id : containerRectId
+        id: containerRectId
         anchors.fill: parent
         color: "beige"
 
 
         Rectangle {
-            id : containedRectId
+            id: containedRectId
             width: 100
             height: 100
-            x : 50
-            y : 50
+            x: 50
+            y: 50
             color: "dodgerblue"
 
             PropertyAnimation{
                 id: xAnimation
                 target: containedRectId
-                property : "x"
-                to : 530
+                property: "x"
+                to: 530
                 duration: 2000
 //                running: rootId.running
             }
@@ -61,7 +61,7 @@ Window {
                 id: yAnimation
                 target: containedRectId
                 property: "y"
-                to : 300
+                to: 300
                 duration: 2000
                 //running: rootId.running
             }
@@ -70,7 +70,7 @@ Window {
                 id: rotationAnimation
                 target: containedRectId
                 property: "rotation"
-                to : 600
+                to: 600
                 duration: 2000
                 //running: rootId.running
             }
@@ -101,7 +101,6 @@ Window {
                 yAnimation.stop()
                 rotationAnimation.stop()
             }
-
         }
     }
 }

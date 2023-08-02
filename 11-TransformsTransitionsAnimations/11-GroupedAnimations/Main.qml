@@ -13,7 +13,7 @@ import QtQuick
 import QtQuick.Window
 
 Window {
-    id : rootId
+    id: rootId
     visible: true
     width: 640
     height: 480
@@ -47,7 +47,7 @@ Window {
         color: "gray"
 
         Rectangle {
-            id : circleId
+            id: circleId
             width: 100
             height: 100
             radius: 70
@@ -56,7 +56,7 @@ Window {
 
         //SequentialAnimation{
         ParallelAnimation{
-            id : groupedAnimId
+            id: groupedAnimId
 
             //Animate X
             NumberAnimation{

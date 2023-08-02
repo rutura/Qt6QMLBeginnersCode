@@ -26,12 +26,12 @@ Window {
     title: qsTr("PathAnimation")
 
     Rectangle {
-        id : containerRectId
+        id: containerRectId
         anchors.fill: parent
         color: "beige"
 
         Rectangle {
-            id : containedRectId
+            id: containedRectId
             width: 100
             height: 100
             x: rootId.width/2 -50 // Take into account the anchor point : -50

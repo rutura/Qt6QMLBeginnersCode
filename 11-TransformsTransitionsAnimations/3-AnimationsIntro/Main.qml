@@ -19,15 +19,11 @@
 
   */
 
-
-
 import QtQuick
 import QtQuick.Window
 
 Window {
-
-
-    id : rootId
+    id: rootId
     visible: true
     width: 640
     height: 480
@@ -35,37 +31,37 @@ Window {
     property bool running: false
 
     Rectangle {
-        id : containerRectId
+        id: containerRectId
         anchors.fill: parent
         color: "beige"
 
 
         Rectangle {
-            id : containedRectId
+            id: containedRectId
             width: 100
             height: 100
-            x : 50
-            y : 50
+            x: 50
+            y: 50
             color: "dodgerblue"
 
 
 
             PropertyAnimation on x { // The property value  source syntax.
-                to : 530
+                to: 530
                 duration: 2000
                 running: rootId.running
             }
 
 
             NumberAnimation on y {
-                to : 300
+                to: 300
                 duration: 2000
                 running: rootId.running
             }
 
 
             RotationAnimation on rotation {
-                to : 600
+                to: 600
                 duration: 2000
                 running: rootId.running
             }
@@ -90,43 +86,6 @@ Window {
 
         }
     }
-
 }
 
-
-
-/*
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-
-ApplicationWindow {
-    visible: true
-    width: 400
-    height: 300
-    title: "Color Animation"
-
-    function animateColor() {
-        var animation = Qt.createQmlObject('import QtQuick 2.15; PropertyAnimation { target: rect; property: "color"; duration: 1000 }', rect)
-        animation.to = "blue"
-        animation.start()
-    }
-
-    Rectangle {
-        id: rect
-        width: 100
-        height: 100
-        color: "red"
-        anchors.centerIn: parent
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                animateColor()
-            }
-        }
-
-    }
-}
-
-*/
 

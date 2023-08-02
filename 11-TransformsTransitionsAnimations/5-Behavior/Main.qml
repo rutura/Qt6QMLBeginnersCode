@@ -14,23 +14,23 @@ import QtQuick
 import QtQuick.Window
 
 Window {
-    id : rootId
+    id: rootId
     visible: true
     width: 640
     height: 480
     title: qsTr("Behavior")
 
     Rectangle {
-        id : containerRectId
+        id: containerRectId
         anchors.fill: parent
         color: "beige"
 
         Rectangle {
-            id : containedRectId
+            id: containedRectId
             width: 100
             height: 100
-            x : 50
-            y : 50
+            x: 50
+            y: 50
             color: "dodgerblue"
 
             Behavior on x {

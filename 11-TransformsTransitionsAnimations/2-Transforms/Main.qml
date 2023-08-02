@@ -23,7 +23,7 @@ Window {
     title: qsTr("Transforms")
 
     Rectangle {
-        id : containerRectId
+        id: containerRectId
         anchors.fill: parent
         color: "beige"
 
@@ -40,7 +40,7 @@ Window {
 
 
     ClickableRect{
-        id : rect1Id
+        id: rect1Id
         width: 100
         height: 100
         x : 50
@@ -56,7 +56,7 @@ Window {
 
 
     ClickableRect{
-        id : rect2Id
+        id: rect2Id
         width: 100
         height: 100
         transformOrigin: Item.TopRight
@@ -70,7 +70,7 @@ Window {
     }
 
     ClickableRect{
-        id : rect3Id
+        id: rect3Id
         width: 100
         height: 100
         transformOrigin: Item.BottomLeft
@@ -84,5 +84,4 @@ Window {
             rotation += 15
         }
     }
-
 }

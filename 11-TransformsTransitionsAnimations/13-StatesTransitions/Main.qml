@@ -30,14 +30,14 @@ Window {
     title: qsTr("States and Transitions")
 
     Rectangle {
-        id : containerRectId
+        id: containerRectId
         anchors.fill: parent
 
         Rectangle {
             id: skyId
             width: parent.width
             height: 200
-            color : "blue"
+            color: "blue"
         }
 
         Rectangle {
@@ -50,32 +50,32 @@ Window {
 
         Image {
             id: treespringId
-            x : 50
-            y : 100
-            width : 200
+            x: 50
+            y: 100
+            width: 200
             height: 300
             source: "qrc:/images/treespringsmall.png"
         }
         Image {
             id: treeSummerId
-            x : 50
-            y : 100
-            width : 200
+            x: 50
+            y: 100
+            width: 200
             height: 300
             source: "qrc:/images/treesummersmall.png"
         }
 
         Rectangle {
-            id : sunId
-            x : parent.width - width -100
-            y : 50
-            width : 100
+            id: sunId
+            x: parent.width - width -100
+            y: 50
+            width: 100
             height: 100
-            color : "yellow"
+            color: "yellow"
             radius: 60
         }
 
-        state : "spring"
+        state: "spring"
 
         //States
         states : [
@@ -83,50 +83,50 @@ Window {
                 name : "summer"
                 PropertyChanges {
                     target: skyId
-                    color : "lightblue"
+                    color: "lightblue"
                 }
 
                 PropertyChanges {
                     target: treeSummerId
-                    opacity : 1
+                    opacity: 1
                 }
                 PropertyChanges {
                     target: treespringId
-                    opacity : 0
+                    opacity: 0
                 }
                 PropertyChanges {
                     target: groundId
-                    color : "darkkhaki"
+                    color: "darkkhaki"
 
                 }
                 PropertyChanges {
                     target: sunId
-                    color : "yellow"
+                    color: "yellow"
                 }
             },
             State {
                 name : "spring"
                 PropertyChanges {
                     target: skyId
-                    color : "deepskyblue"
+                    color: "deepskyblue"
                 }
 
                 PropertyChanges {
                     target: treeSummerId
-                    opacity : 0
+                    opacity: 0
                 }
                 PropertyChanges {
                     target: treespringId
-                    opacity : 1
+                    opacity: 1
                 }
                 PropertyChanges {
                     target: groundId
-                    color : "lime"
+                    color: "lime"
                 }
 
                 PropertyChanges {
                     target: sunId
-                    color : "lightyellow"
+                    color: "lightyellow"
                 }
             }
         ]
@@ -135,25 +135,25 @@ Window {
         //Transitions
         transitions : [
            Transition {
-               from : "summer"
-               to : "spring"
+               from: "summer"
+               to: "spring"
                ColorAnimation {
                    duration: 500
                }
                NumberAnimation {
-                   property : "opacity"
+                   property: "opacity"
                    duration: 500
                }
 
            },
            Transition {
-               from : "spring"
-               to : "summer"
+               from: "spring"
+               to: "summer"
                ColorAnimation {
                    duration: 500
                }
                NumberAnimation {
-                   property : "opacity"
+                   property: "opacity"
                    duration: 500
                }
 
@@ -165,13 +165,13 @@ Window {
 
         /*
         transitions : Transition {
-            from : "*" ; to : "*"
+            from: "*" ; to: "*"
 
             ColorAnimation {
                 duration: 500
             }
             NumberAnimation {
-                properties : "opacity"
+                properties: "opacity"
                 duration: 500
             }
         }
@@ -181,7 +181,7 @@ Window {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                containerRectId.state = (containerRectId.state==="spring"?"summer":"spring")
+                containerRectId.state = (containerRectId.state ==="spring" ? "summer" : "spring")
             }
         }
 

@@ -13,8 +13,8 @@ Window {
     visible: true
     title: "pendulum Swing"
 
-    property int pendulumId_angle: 30
-    property int anim_duration: 900
+    property int pendulumAngle: 30
+    property int animDuration: 900
 
     Rectangle {
         id: pendulumId
@@ -42,22 +42,22 @@ Window {
             running: true
 
             NumberAnimation {
-                id: right_to_left_id
+                id: rightToLeftId
                 target: pendulumId
                 property: "rotation"
-                from: -pendulumId_angle
-                to: pendulumId_angle
-                duration: anim_duration
+                from: -pendulumAngle
+                to: pendulumAngle
+                duration: animDuration
                 easing.type: Easing.InOutQuad
             }
 
             NumberAnimation {
-                id: left_to_right_id
+                id: leftToRightId
                 target: pendulumId
                 property: "rotation"
-                from: pendulumId_angle
-                to: -pendulumId_angle
-                duration: anim_duration
+                from: pendulumAngle
+                to: -pendulumAngle
+                duration: animDuration
                 easing.type: Easing.InOutQuad
             }
         }
