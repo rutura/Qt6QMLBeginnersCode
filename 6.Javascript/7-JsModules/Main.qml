@@ -40,12 +40,12 @@ Window {
 
     Rectangle {
 
-        width : 300
+        width: 300
         height: 100
         color: "yellowgreen"
         anchors.centerIn: parent
         Text {
-            text : "Click Me"
+            text: "Click Me"
             anchors.centerIn: parent
         }
 
@@ -58,12 +58,8 @@ Window {
                 */
 
 
-                //Can't call a method that's not exported : subtract isn't exported from utilities2.mjs
-
+                //Can't call a method that's not exported: subtract isn't exported from utilities2.mjs
                 console.log("Age diff: " + Utilities1.ageDiff(33,17))
-
-
-
 
                 //Just because add is usable from utilities1.js doesn't mean main.qml
                  // can use it. utilities2.js doesn't export it.

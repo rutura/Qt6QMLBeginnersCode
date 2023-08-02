@@ -17,14 +17,14 @@ Window {
     title: qsTr("JS")
 
     Rectangle {
-        id : containerRectId
-        width : getHeight()  //JS in Function
+        id: containerRectId
+        width: getHeight()  //JS in Function
         height: 100
         color: x > 300 ? "red" : "green" //property binding
 
         //JS in signal handler
         onXChanged: {
-            console.log("Current value of x : "+ x)
+            console.log("Current value of x: "+ x)
         }
 
         //Custom function
@@ -32,7 +32,6 @@ Window {
         {
             return  height * 2
         }
-
     }
 
     MouseArea {

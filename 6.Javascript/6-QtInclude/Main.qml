@@ -24,13 +24,13 @@ Window {
     title: qsTr("Javascript Import Demo")
 
     Rectangle {
-        width : 300
+        width: 300
         height: 100
         color: "yellowgreen"
         anchors.centerIn: parent
 
         Text {
-            text : "Click Me"
+            text: "Click Me"
             anchors.centerIn: parent
         }
 

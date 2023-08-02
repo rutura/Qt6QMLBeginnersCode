@@ -26,7 +26,7 @@ Window {
     }
 
     Rectangle {
-        id : mRectId
+        id: mRectId
         width: min( 500,400)
         height: 100
         anchors.centerIn: parent
@@ -34,7 +34,7 @@ Window {
     }
 
     MouseArea {
-        id : mMouseAreaId
+        id: mMouseAreaId
         anchors.fill: parent
 
         function sayMessage()
@@ -50,7 +50,7 @@ Window {
     }
 
     Component.onCompleted: {
-        console.log("The width of the rect is :"+ min(500,400))
+        console.log("The width of the rect is: "+ min(500,400))
         mMouseAreaId.sayMessage()
     }
 }
