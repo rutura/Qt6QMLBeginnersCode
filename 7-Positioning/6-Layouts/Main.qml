@@ -41,17 +41,17 @@ Window {
     title: qsTr("Layouts")
 
     GridLayout{
-        id : mGridLayoutId
+        id: mGridLayoutId
         anchors.fill: parent
         columns: 3
         layoutDirection: Qt.RightToLeft
 
         Rectangle {
-            id : topLeftRectId
+            id: topLeftRectId
             width: 70
             height: width
             color: "green"
-            Text{text: "1"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "1"; anchors.centerIn: parent; font.pointSize: 20}
 
 
             //Showing Layout alignment
@@ -62,11 +62,11 @@ Window {
             Layout.maximumHeight: 150
         }
         Rectangle {
-            id : topCenterRectId
+            id: topCenterRectId
             width: 100
             height: width
             color: "red"
-            Text{text: "2"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "2"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -77,11 +77,11 @@ Window {
         //Rectangle "3" taken out . Its space will be taken by Rectangle "2"
         /*
         Rectangle {
-            id : topRightRectId
+            id: topRightRectId
             width: 100
             height: width
             color: "blue"
-            Text{text: "3"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "3"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -90,11 +90,11 @@ Window {
 
 
         Rectangle {
-            id : centerLeftRectId
+            id: centerLeftRectId
             width: 100
             height: width
             color: "beige"
-            Text{text: "4"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "4"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -102,22 +102,22 @@ Window {
 
         }
         Rectangle {
-            id : centerCenterRectId
+            id: centerCenterRectId
             width: 100
             height: width
             color: "pink"
-            Text{text: "5"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "5"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true
 
         }
         Rectangle {
-            id : centerRightRectId
+            id: centerRightRectId
             width: 100
             height: width
             color: "yellow"
-            Text{text: "6"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "6"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -130,11 +130,11 @@ Window {
         /*
 
         Rectangle {
-            id : bottomLeftRectId
+            id: bottomLeftRectId
             width: 100
             height: width
             color: "magenta"
-            Text{text: "7"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "7"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -145,22 +145,22 @@ Window {
 
 
         Rectangle {
-            id : bottomCenterRectId
+            id: bottomCenterRectId
             width: 100
             height: width
             color: "yellowgreen"
-            Text{text: "8"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "8"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true
 
         }
         Rectangle {
-            id : bottomRightRectId
+            id: bottomRightRectId
             width: 100
             height: width
             color: "dodgerblue"
-            Text{text: "9"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "9"; anchors.centerIn: parent; font.pointSize: 20}
 
             Layout.fillWidth: true
             Layout.fillHeight: true

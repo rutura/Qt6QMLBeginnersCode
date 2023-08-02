@@ -23,14 +23,14 @@ Window {
     title: qsTr("Anchors : Parents and Siblings")
 
     Rectangle {
-        id : containerRectId
+        id: containerRectId
         width: 300
         height: width
         border.color: "black"
         anchors.centerIn: parent
 
         Rectangle {
-            id : topLeftRectId
+            id: topLeftRectId
             width: 100
             height: width
             color: "magenta"
@@ -41,7 +41,7 @@ Window {
     }
 
     Rectangle {
-        id : siblingRect
+        id: siblingRect
         width: 200
         height: 200
         color : "black"

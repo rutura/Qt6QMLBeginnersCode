@@ -40,129 +40,129 @@ Window {
     title: qsTr("Flow")
 
     Flow {
-        id : containerFlowId
+        id: containerFlowId
         width : parent.width
         height: parent.height
 
-        flow : Flow.TopToBottom
+        flow: Flow.TopToBottom
         layoutDirection: Qt.RightToLeft
 
         //spacing: 20
 
 
         Rectangle {
-            id : topLeftRectId
+            id: topLeftRectId
             width : 70
             height: 70
             color: "green"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "1"
+                text: "1"
             }
         }
 
         Rectangle {
-            id : topCenterRectId
+            id: topCenterRectId
             width : 100
             height: 100
             color: "beige"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "2"
+                text: "2"
             }
         }
 
         Rectangle {
-            id : topRightRectId
+            id: topRightRectId
             width : 100
             height: 100
             color: "dodgerblue"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "3"
+                text: "3"
             }
         }
 
         Rectangle {
-            id : leftCenterRectId
+            id: leftCenterRectId
             width : 100
             height: 100
             color: "magenta"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "4"
+                text: "4"
             }
         }
 
         Rectangle {
-            id : centerRectId
+            id: centerRectId
             width : 100
             height: 100
             color: "red"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "5"
+                text: "5"
             }
         }
         Rectangle {
-            id : rightCenterId
+            id: rightCenterId
             width : 100
             height: 100
             color: "yellow"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "6"
+                text: "6"
             }
         }
 
         Rectangle {
-            id : bottomLeftRectId
+            id: bottomLeftRectId
             width : 100
             height: 100
             color: "royalblue"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "7"
+                text: "7"
             }
         }
 
         Rectangle {
-            id : bottomCenterRect
+            id: bottomCenterRect
             width : 100
             height: 100
             color: "greenyellow"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "8"
+                text: "8"
             }
         }
 
         Rectangle {
-            id : bottomRightRectId
+            id: bottomRightRectId
             width : 100
             height: 100
             color: "blue"
             Text {
                 anchors.centerIn: parent
-                color :"black"
+                color: "black"
                 font.pointSize: 30
-                text : "9"
+                text: "9"
             }
         }
     }

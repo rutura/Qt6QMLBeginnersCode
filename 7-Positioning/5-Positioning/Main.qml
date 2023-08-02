@@ -41,7 +41,7 @@ Window {
     title: qsTr("Posionners")
 
     Grid {
-        columns : 2
+        columns: 2
         spacing: 10
 //        rowSpacing: 10
 //        columnSpacing: 10
@@ -53,36 +53,36 @@ Window {
         LayoutMirroring.childrenInherit: true
 
         Rectangle {
-            id : topLeftRectId
+            id: topLeftRectId
             width: 60
             height: width
             color: "magenta"
-            Text{text: "1"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "1"; anchors.centerIn: parent; font.pointSize: 20}
         }
 
         Rectangle {
-            id : topCenterRectId
+            id: topCenterRectId
             width: 100
             height: width
             color: "yellowgreen"
-            Text{text: "2"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "2"; anchors.centerIn: parent; font.pointSize: 20}
         }
 
         Rectangle {
-            id : topRightRectId
+            id: topRightRectId
             width: 100
             height: width
             color: "dodgerblue"
-            Text{text: "3"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "3"; anchors.centerIn: parent; font.pointSize: 20}
 
         }
 
         Rectangle {
-            id : centerLeftRectId
+            id: centerLeftRectId
             width: 100
             height: width
             color: "beige"
-            Text{text: "4"; anchors.centerIn: parent;font.pointSize: 20}
+            Text{text: "4"; anchors.centerIn: parent; font.pointSize: 20}
 
         }
 
