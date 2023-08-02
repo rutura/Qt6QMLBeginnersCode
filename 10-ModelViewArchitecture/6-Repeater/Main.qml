@@ -18,7 +18,7 @@ Window {
     visible: true
     width: 640
     height: 480
-    title: qsTr("Repeater ")
+    title: qsTr("Repeater")
 
     Flickable {
         contentHeight: columnId.implicitHeight
@@ -26,16 +26,16 @@ Window {
 
 
         Column {
-            id : columnId
+            id: columnId
             anchors.fill: parent
             spacing: 2
 
             Repeater {
-                id : repeaterId
+                id: repeaterId
 
-                //model : 15
-                model: ["Jan","Feb","March"]
-                delegate : Rectangle {
+                //model: 15
+                model: ["Jan", "Feb", "March"]
+                delegate: Rectangle {
                     width: parent.width
                     height: 50
                     color: "dodgerblue"
@@ -49,8 +49,8 @@ Window {
                     MouseArea{
                         anchors.fill: parent
                         onClicked: {
-                            console.log("Clicked on :"+modelData)
-                            console.log("count : " + repeaterId.count)
+                            console.log("Clicked on: "+modelData)
+                            console.log("count: " + repeaterId.count)
                         }
                     }
                 }

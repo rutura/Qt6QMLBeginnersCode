@@ -20,10 +20,10 @@ Window {
     title: qsTr("Header Footer and Highlight")
 
     ListView {
-        id : mListViewId
+        id: mListViewId
         anchors.fill: parent
         header: headerId
-        footer : Rectangle{
+        footer: Rectangle{
             width: rootId.width
             height: 50
             color: "dodgerblue"
@@ -33,13 +33,13 @@ Window {
             color: "blue"
             radius: 14
             border.color: "yellowgreen"
-            z : 3
+            z: 3
             opacity: 0.1
         }
 
-        model : ["January","February","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
+        model: ["January", "February", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
         delegate: Rectangle {
-            id : delegateId
+            id: delegateId
             width: rootId.width
             height: 50
             color: "beige"
@@ -47,7 +47,7 @@ Window {
             radius: 10
 
             Text {
-                id : textId
+                id: textId
                 anchors.centerIn: parent
                 font.pointSize: 20
                 text : modelData
@@ -56,7 +56,7 @@ Window {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.log("Clicked on :"+ modelData)
+                    console.log("Clicked on: "+ modelData)
                     mListViewId.currentIndex = index
                 }
             }
@@ -64,9 +64,9 @@ Window {
     }
 
     Component {
-        id : headerId
+        id: headerId
         Rectangle {
-            id : headerRectId
+            id: headerRectId
             width: rootId.width
             height: 50
             color: "yellowgreen"
@@ -74,12 +74,10 @@ Window {
 
             Text {
                 anchors.centerIn: parent
-                text : "Months"
+                text: "Months"
                 font.pointSize: 20
             }
 
         }
     }
-
-
 }

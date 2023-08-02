@@ -67,34 +67,31 @@ Window {
     }
 
     ListView{
-        id : mListViewId
+        id: mListViewId
         anchors.fill: parent
         model : mXmlListModelId
         delegate: Rectangle {
             width : parent.width
             height: 50
-            color : "beige"
+            color: "beige"
             Row {
                 spacing: 30
                 Text {
-                    text : instructor
+                    text: instructor
                     font.pointSize: 15
                 }
                 Text {
-                    text : coursename + " (" + year + ")"
-                    font.bold: hot==="true"?true:false
+                    text: coursename + " (" + year + ")"
+                    font.bold: hot === "true" ? true : false
                     font.pointSize: 15
                 }
             }
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.log("Clicked on : "+ hot)
+                    console.log("Clicked on: "+ hot)
                 }
             }
         }
     }
-
-
-
 }

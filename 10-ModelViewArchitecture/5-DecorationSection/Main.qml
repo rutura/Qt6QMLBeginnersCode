@@ -19,39 +19,39 @@ Window {
 
 
     ListModel {
-        id : mListModel
+        id: mListModel
 
         ListElement {
-            names : "Seth Moris"; company : "GOOGLE"
+            names: "Seth Moris"; company: "GOOGLE"
         }
         ListElement {
-            names : "Miriam Katv"; company : "GOOGLE"
+            names: "Miriam Katv"; company: "GOOGLE"
         }
 
         ListElement {
-            names : "Eugene Fitzgerald"; company : "GOOGLE"
+            names: "Eugene Fitzgerald"; company: "GOOGLE"
         }
         ListElement {
-            names : "Kantkl Vikney"; company : "GOOGLE"
+            names: "Kantkl Vikney"; company : "GOOGLE"
         }
         ListElement {
-            names : "Mary Beige"; company : "TESLA"
+            names: "Mary Beige"; company: "TESLA"
         }
         ListElement {
-            names : "Bamba Pikt"; company : "TESLA"
+            names: "Bamba Pikt"; company: "TESLA"
         }
         ListElement {
-            names : "Jeffery Mor"; company : "SIEMENS"
+            names: "Jeffery Mor"; company: "SIEMENS"
         }
         ListElement {
-            names : "Pick Mo"; company : "SIEMENS"
+            names: "Pick Mo"; company: "SIEMENS"
         }
 
     }
 
 
     ListView {
-        id : mListViewId
+        id: mListViewId
         anchors.fill: parent
         model : mListModel
         delegate: delegateId
@@ -59,7 +59,7 @@ Window {
             property: "company"
             criteria: ViewSection.FullString
             delegate: Rectangle{
-                id : sectionRectId
+                id: sectionRectId
                 width : parent.width
                 height: 50
                 color: "red"
@@ -67,7 +67,7 @@ Window {
                 radius: 14
 
                 Text {
-                    id : sectionTextId
+                    id: sectionTextId
                     text : section
                     anchors.centerIn: parent
                     font.pointSize: 20
@@ -76,7 +76,7 @@ Window {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        console.log("Clicked on : " + section)
+                        console.log("Clicked on: " + section)
                     }
                 }
             }
@@ -85,9 +85,9 @@ Window {
 
 
     Component {
-        id : delegateId
+        id: delegateId
         Rectangle {
-            id : rectangleId
+            id: rectangleId
             width : parent.width  // Remember to specify these sizes or you'll have problems
             height: 50
             color: "beige"
@@ -95,16 +95,16 @@ Window {
             radius: 14
 
             Text {
-                id : textId
+                id: textId
                 anchors.centerIn: parent
-                text : names
+                text: names
                 font.pointSize: 20
             }
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.log("Clicked on : " + names)
+                    console.log("Clicked on: " + names)
                 }
             }
 

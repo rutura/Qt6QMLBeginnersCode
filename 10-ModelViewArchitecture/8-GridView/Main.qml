@@ -17,7 +17,7 @@ Window {
 
 
     ListModel {
-        id : modelId
+        id: modelId
 
         ListElement {
             mNumber: 1
@@ -58,7 +58,7 @@ Window {
     }
 
     GridView{
-        id : mGridViewId
+        id: mGridViewId
         anchors.fill: parent
         flow : GridView.FlowTopToBottom
         layoutDirection: Qt.RightToLeft
@@ -68,7 +68,7 @@ Window {
             height: width
             color: mColor
             Text {
-                text : mNumber
+                text: mNumber
                 anchors.centerIn: parent
                 font.pointSize: 20
 

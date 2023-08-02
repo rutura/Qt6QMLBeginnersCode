@@ -91,16 +91,11 @@ Window {
 
                 }
 
-
-
                 Text {
                     id: textId
                     text: model.our_color; font.pixelSize: 24
                 }
-
-
             }
-
         }
 
         PathView {

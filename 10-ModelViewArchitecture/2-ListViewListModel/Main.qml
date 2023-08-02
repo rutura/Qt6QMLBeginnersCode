@@ -20,14 +20,14 @@ Window {
     title: qsTr("ListView and ListModel Demo")
 
     ListView {
-        id : mListViewId
+        id: mListViewId
         anchors.fill: parent
-        model : mModelId
-        //delegate : delegateId
+        model: mModelId
+        //delegate: delegateId
 
 
         delegate: Rectangle {
-            id : rectangleId
+            id: rectangleId
             width: parent.width
             height: 50
             color: "beige"
@@ -35,16 +35,16 @@ Window {
             radius: 10
 
             Text {
-                id : textId
+                id: textId
                 anchors.centerIn: parent
                 font.pointSize: 20
-                text : country + " : " + capital
+                text: country + " : " + capital
             }
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.log("Clicked on :"+ capital + " : "+ country)
+                    console.log("Clicked on: "+ capital + ", "+ country)
                 }
             }
         }
@@ -53,40 +53,40 @@ Window {
 
 
     ListModel {
-        id : mModelId
+        id: mModelId
         ListElement {
-            country : "Rwanda"
-            capital : "Kigali"
+            country: "Rwanda"
+            capital: "Kigali"
         }
         ListElement {
-            country : "Germany"; capital : "Berlin"
+            country: "Germany"; capital: "Berlin"
         }
         ListElement {
-            country : "Japan"; capital : "Tokyo"
+            country: "Japan"; capital: "Tokyo"
         }
 
         ListElement {
-            country : "Nigeria"; capital : "Lagos"
+            country :"Nigeria"; capital: "Lagos"
         }
         ListElement {
-            country : "Ghana"; capital : "Accra"
+            country: "Ghana"; capital: "Accra"
         }
         ListElement {
-            country : "Kenya"; capital : "Nairobi"
+            country: "Kenya"; capital: "Nairobi"
         }
         ListElement {
-            country : "India"; capital : "New Delhi"
+            country: "India"; capital: "New Delhi"
         }
         ListElement {
-            country : "Uganda"; capital : "Kampala"
+            country: "Uganda"; capital: "Kampala"
         }
 
     }
 
     Component {
-        id : delegateId
+        id: delegateId
         Rectangle {
-            id : rectangleId
+            id: rectangleId
             width: parent.width
             height: 50
             color: "dodgerblue"
@@ -94,20 +94,19 @@ Window {
             radius: 15
 
             Text {
-                id : textId
+                id: textId
                 anchors.centerIn: parent
                 font.pointSize: 20
-                text : country + " : " + capital
+                text: country + ": " + capital
             }
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.log("Clicked on :"+ capital + ", "+ country)
+                    console.log("Clicked on: "+ capital + ", "+ country)
                 }
             }
         }
     }
-
 
 }

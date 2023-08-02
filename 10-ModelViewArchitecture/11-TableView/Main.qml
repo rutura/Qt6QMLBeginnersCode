@@ -3,7 +3,7 @@ import QtQuick.Controls
 import Qt.labs.qmlmodels
 
 ApplicationWindow {
-    width: 400
+    width: 680
     height: 400
     visible: true
 
@@ -111,8 +111,6 @@ ApplicationWindow {
                 }
             }
         }
-
-
     }
 
 

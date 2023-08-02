@@ -19,12 +19,12 @@ Window {
 
 
     ListView {
-        id : mListViewId
+        id: mListViewId
         anchors.fill: parent
-        //model : ["January","February","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]
+        //model : ["January", "February", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
         model: 100
         delegate: Rectangle {
-            id : rectangleId
+            id: rectangleId
             width: rootId.width
             height: 50
             color: "beige"
@@ -32,16 +32,16 @@ Window {
             radius: 10
 
             Text {
-                id : textId
+                id: textId
                 anchors.centerIn: parent
                 font.pointSize: 20
-                text : modelData
+                text: modelData
             }
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.log("Clicked on :"+ modelData)
+                    console.log("Clicked on: "+ modelData)
                 }
             }
         }
