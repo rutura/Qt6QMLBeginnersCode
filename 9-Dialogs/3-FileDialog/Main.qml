@@ -33,7 +33,7 @@ Window {
         anchors.centerIn: parent
 
         Button{
-            text : "Choose File"
+            text: "Choose File"
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
                 fileDialogId.open()
@@ -41,13 +41,13 @@ Window {
         }
 
         Text {
-            id : textId
-            text : "Use hasn't chosen yet"
+            id: textId
+            text: "Use hasn't chosen yet"
             wrapMode: Text.Wrap
         }
 
         FileDialog{
-            id : fileDialogId
+            id: fileDialogId
             title: "Choose File"
             nameFilters: ["Text files (*.txt)", "HTML files (*.html *.htm)", "Images (*.jpg *.png)"]
 

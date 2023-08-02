@@ -22,7 +22,7 @@ Window {
         anchors.centerIn: parent
 
         Button{
-            text : "Change Font"
+            text: "Change Font"
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
                 fontDialogId.open()
@@ -30,17 +30,17 @@ Window {
         }
 
         Text {
-            id : textId
-            text : "Hello World"
+            id: textId
+            text: "Hello World"
         }
 
         FontDialog{
-            id : fontDialogId
+            id: fontDialogId
             title: "Choose Font"
-            currentFont : Qt.font({ family: "Arial", pointSize: 24, weight: Font.Normal })
+            currentFont: Qt.font({ family: "Arial", pointSize: 24, weight: Font.Normal })
 
             onAccepted: {
-                console.log("Chose font : "+selectedFont)
+                console.log("Chose font: "+selectedFont)
                 textId.font = fontDialogId.selectedFont
             }
             onRejected: {

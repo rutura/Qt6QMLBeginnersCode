@@ -36,10 +36,10 @@ Window {
         }
 
         ColorDialog{
-            id : colorDialogId
-            title: "Please Choose a Color"
+            id: colorDialogId
+            title: "Please choose a color"
             onAccepted: {
-                console.log("User chose color : "+ selectedColor)
+                console.log("User chose color: "+ selectedColor)
                 rectangleId.color = selectedColor
 
             }

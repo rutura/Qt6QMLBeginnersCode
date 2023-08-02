@@ -21,7 +21,7 @@ Window {
         anchors.centerIn: parent
 
         Button{
-            text : "Choose Folder"
+            text: "Choose Folder"
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
                 folderDialogId.open()
@@ -29,13 +29,13 @@ Window {
         }
 
         Text {
-            id : textId
+            id: textId
             text : "Use hasn't chosen yet"
             wrapMode: Text.Wrap
         }
 
         FolderDialog{
-            id : folderDialogId
+            id: folderDialogId
             title: "Choose Folder"
 
             onAccepted: {

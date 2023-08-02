@@ -18,7 +18,7 @@ Window {
     title: qsTr("MessageDialog ")
 
     Button{
-        text : "Push Me"
+        text: "Push Me"
         onClicked: {
             messageDialog.open()
         }
