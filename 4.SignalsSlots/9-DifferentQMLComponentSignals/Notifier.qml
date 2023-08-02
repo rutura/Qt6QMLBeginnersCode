@@ -13,7 +13,7 @@ Item {
     signal notify( string count)//Declare signal
 
 
-    property Receiver target : null
+    property Receiver target: null
     onTargetChanged: {
         notify.connect(target.receiveInfo)
     }
@@ -26,17 +26,17 @@ Item {
 
 
     Rectangle {
-        id : notifierRectId
+        id: notifierRectId
         width: 200
         height: 200
         color: "red"
 
 
         Text {
-            id : displayTextId
+            id: displayTextId
             anchors.centerIn: parent
             font.pointSize: 20
-            text : count
+            text: count
         }
 
         MouseArea{

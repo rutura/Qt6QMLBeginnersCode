@@ -21,25 +21,26 @@ Window {
     visible: true
     title: qsTr("Property change handlers")
 
-    Rectangle{
-        id : rect
-        width : 300
-        height : width
-        color : "dodgerblue"
+    Rectangle {
+        id: rect
+        width: 300
+        height: width
+        color: "dodgerblue"
 
-        property string description : "A rectangle to play with"
+        property string description: "A rectangle to play with"
 
-        onWidthChanged: function(){
-            console.log("Width changed to :"+ rect.width)
+        onWidthChanged: function() {
+            console.log("Width changed to: " + rect.width)
         }
 
-        onHeightChanged: function(){
-            console.log("Height changed to :"+ rect.height)
+        onHeightChanged: function() {
+            console.log("Height changed to: " + rect.height)
         }
 
         onColorChanged: {
 
         }
+
         onVisibleChanged: {
 
         }
@@ -48,11 +49,11 @@ Window {
 
         }
 
-        MouseArea{
+        MouseArea {
             anchors.fill: parent
             onClicked: {
-                rect.width = rect.width+20
-            } 
+                rect.width = rect.width + 20
+            }
         }
     }
 }

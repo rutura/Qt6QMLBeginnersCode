@@ -9,24 +9,24 @@ Item {
 
     function receiveInfo( count){
         receiverDisplayTextId.text = count
-        console.log("Receiver received number : "+ count)
+        console.log("Receiver received number: "+ count)
     }
 
 
 
 
     Rectangle {
-        id : receiverRectId
+        id: receiverRectId
         width: 200
         height: 200
         color: "blue"
 
 
         Text {
-            id : receiverDisplayTextId
+            id: receiverDisplayTextId
             anchors.centerIn: parent
             font.pointSize: 20
-            text : "0"
+            text: "0"
         }
     }
 

@@ -24,10 +24,10 @@ Window {
     title: qsTr("Connections")
 
     Rectangle{
-        id : rectId
+        id: rectId
         width : 200
         height: 200
-        color : "blue"
+        color: "blue"
 
         MouseArea{
             id:mouseAreaId
@@ -41,7 +41,7 @@ Window {
             console.log("Hello")
         }
         function onDoubleClicked(mouse){
-            console.log("Doubleclicked at : "+mouse.x)
+            console.log("Doubleclicked at: "+mouse.x)
         }
     }
 }
