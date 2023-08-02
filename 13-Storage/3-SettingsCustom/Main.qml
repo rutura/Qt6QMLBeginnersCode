@@ -36,7 +36,7 @@ import QtQuick.Dialogs
 import QtCore
 
 Window {
-    id : rootId
+    id: rootId
     visible: true
 
     //2.Read data from the Settings object
@@ -64,7 +64,7 @@ Window {
                 id: colorDialogId
                 title: "Please choose a color"
                 onAccepted: {
-                    console.log("The new color is : "+ selectedColor)
+                    console.log("The new color is: "+ selectedColor)
                     rectId.color = selectedColor
                 }
                 onRejected: {
@@ -79,10 +79,10 @@ Window {
     Settings{
         id: windowSettingsId
         category: "window"
-        property int x : 300
-        property int y : 300
-        property int width : 640
-        property int height : 480
+        property int x: 300
+        property int y: 300
+        property int width: 640
+        property int height: 480
     }
 
     Settings{
