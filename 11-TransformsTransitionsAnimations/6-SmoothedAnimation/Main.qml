@@ -1,15 +1,5 @@
-/*
-
-        . SmoothedAnimation animates a property using some predetermined  ease
-                in/out quad easing curve
-
-        . Start out by showing your example with containedRectId
-
-        . Borrow the example from the docs to show the tracking effect.
-
-            . It's good to borrow from the docs :-)
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 
 import QtQuick

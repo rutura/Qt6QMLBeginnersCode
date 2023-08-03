@@ -1,10 +1,5 @@
-/*
-
-        . Exploring fontDialog
-        . Used to select fonts
-        . Use the doc and improvise based on the code here
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

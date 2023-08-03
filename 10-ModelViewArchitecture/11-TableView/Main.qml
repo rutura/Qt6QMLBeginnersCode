@@ -1,3 +1,6 @@
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 import QtQuick
 import QtQuick.Controls
 import Qt.labs.qmlmodels

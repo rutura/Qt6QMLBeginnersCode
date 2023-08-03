@@ -1,11 +1,5 @@
-/*
-
-    . Introduce property bindings
-    . Show that changing the binding with a static value breaks the binding
-    . Show how to update the binding with the Qt.binding thing
-
-  */
-
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

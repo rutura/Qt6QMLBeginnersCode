@@ -1,14 +1,5 @@
-/*
-
-        . Exploring Frame
-            . Gives us a logical grouping of elements
-            . Doesn't give us any layout. You have to provide your own
-                positioning.
-
-         . Looks bad by default on Windows11, so we change the style to
-            show different looks.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Controls

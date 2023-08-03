@@ -1,19 +1,5 @@
-/*
-
-        . Exploring pathAnimation
-        . Animates an ITEM along a path
-        . The target item is specified through the target property. Its value is
-            an item though, not a property.
-
-        . You can use the anchorPoint to specify which point of the item will
-            coincide with the points on the curve.
-
-        . We start the animation when the beige rectangle is clicked.
-
-        . Improvise.
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

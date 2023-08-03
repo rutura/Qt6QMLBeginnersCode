@@ -1,27 +1,5 @@
-/*
-
-        . Showing how to use the target property to assign an animation to an element
-
-        . Still doing that through:
-            . PropertyAnimation on x
-            . NumberAnimation y
-            . RotationAnimation on rotation
-
-       . We use the target and property properties to decide where the animation will be
-            applied :
-                .   target: containedRectId
-                    property : "x"
-
-       . The animation doesn't start automatically like we saw for property value sources.
-            We have to start it explicitly. Two techniques are available:
-                . a property binding to the running property of the animation. This is what
-                    we did in the last lecture
-                . calling the start and stop methods. These are methods defined in a Parent
-                    Animation type, that all other animation types inherit from.
-
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

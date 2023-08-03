@@ -1,16 +1,5 @@
-/*
-
-        . Connecting signals to other signals
-
-        . We have this chain of signals :
-                greet -->> forward_greeting -->> slot[respond_your_way]
-
-
-
-        . We can connect a signal to another signal with the syntax :
-            . rectId.greet.connect(rectId.forward_greeting)
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

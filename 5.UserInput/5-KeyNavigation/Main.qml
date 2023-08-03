@@ -1,12 +1,5 @@
-/*
-        . Exploring the KeyNavigation attached property
-            . Allows to shift focus to other components in a ui
-            . start out with the commented code below
-            . Then steal the snippet from the docs and use it
-                just for the fun of it.
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

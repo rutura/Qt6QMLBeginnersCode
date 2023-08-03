@@ -1,28 +1,5 @@
-/*
-        . Exploring signal handlers for built in signals
-            . Components in QML will have pre-defined signals
-            . For example : MouseArea has these signals :
-                    canceled()
-                    clicked(MouseEvent mouse)
-                    doubleClicked(MouseEvent mouse)
-                    entered()
-                    exited()
-                    positionChanged(MouseEvent mouse)
-                    pressAndHold(MouseEvent mouse)
-                    pressed(MouseEvent mouse)
-                    released(MouseEvent mouse)
-                    wheel(WheelEvent wheel)
-
-             . You can process any of these signals by setting up a signal
-                    handler with the syntax : On<SignalName> with the first
-                    letter capitalized. Examples :
-                        onClicked:{//Code that responds to click}
-                        onEntered: {//Code that responds to Enter}
-
-             . We play with a bunch of them
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

@@ -1,10 +1,5 @@
-/*
-    . Exploring easing curves
-    . Easing curves control how the animation changes over time, for example, how
-        fast we go from the beginning to the end.
-    . Improvise.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

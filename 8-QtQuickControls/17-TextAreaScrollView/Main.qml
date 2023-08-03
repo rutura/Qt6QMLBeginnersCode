@@ -1,16 +1,5 @@
-/*
-
-        . Exploring TextArea
-            . Start out with a raw TextArea without a scrollView
-            . Wrap in a scrollView to add some scrolling
-            . ScrollView has some binding loops problems especially
-                when you try to use that in conjunction with TextArea, example
-                below :
-                    QML ScrollView: Binding loop detected for property "rightPadding"
-            . I haven't cared enough to dig more into this, but if it is for your
-                project, you may research more on this.LEAVING THIS FOR NOW.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Controls

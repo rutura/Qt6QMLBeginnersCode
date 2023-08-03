@@ -1,16 +1,5 @@
-/*
-        . A basic example to generally explore the syntax of qml
-        . Main ideas :
-            . QML is a declarative language
-            . top down hierarchy
-            . components can have children
-            . components can have unique IDs
-            . variables
-            . property binding
-            . responding to events
-            . anchors to position elemetns
-         . Reference the video for Qt5 if needed.
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

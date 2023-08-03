@@ -1,3 +1,6 @@
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 function dbInit(){
     console.log(" Initializing database...")
 

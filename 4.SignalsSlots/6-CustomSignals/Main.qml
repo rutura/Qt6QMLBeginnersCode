@@ -1,23 +1,5 @@
-/*
-
-        . Exploring how to set up your own signals
-        . The syntax :
-            .         signal greet(string message)
-        . Qt automatically gives you a handler
-            .         onGreet: function(message){
-                            console.log("Greeting with message : "+ message)
-                        }
-
-         . You fire the signal by calling it like you call a regular javascript function :
-            .         MouseArea{
-                            anchors.fill: parent
-                            onClicked: {
-                                //Fire the signal by just calling it like a function
-                                rectId.greet("The sky is blue")
-                            }
-                        }
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

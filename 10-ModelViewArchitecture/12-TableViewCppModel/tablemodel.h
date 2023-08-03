@@ -1,3 +1,6 @@
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 #ifndef TABLEMODEL_H
 #define TABLEMODEL_H
 

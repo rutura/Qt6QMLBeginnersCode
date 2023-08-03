@@ -1,22 +1,5 @@
-/*
-
-        . Exploring elements :
-            . Rectangle
-            . Item
-                . An invisible visual item   : docs
-
-            . Text
-
-        . Flow :
-            . Start by Item
-            . Put in the little colored rectangles
-            . Show that you can manipulate their positions just by playing
-                with the container invisible item
-            . Show the docs for Item and all the properties
-            . Put in the beige rect to fill the entire invisible item
-            . Show Text
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

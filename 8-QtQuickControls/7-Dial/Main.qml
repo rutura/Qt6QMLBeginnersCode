@@ -1,8 +1,6 @@
-/*
-    . Exploring the Dial control
-    . Show the wrap property.
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
-  */
 import QtQuick
 import QtQuick.Controls
 

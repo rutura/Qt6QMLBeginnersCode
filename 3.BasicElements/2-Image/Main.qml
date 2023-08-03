@@ -1,25 +1,5 @@
-/*
-
-        . Exploring the Image element
-        . Different ways to load images :
-            . from working directory
-                . Working directory is where your binary is built :
-                    for example :
-                        F:\OnlineCourses\Qt6QMLForBeginners\3.BasicElements\build-2-Image-Desktop_Qt_6_3_1_MinGW_64_bit-Debug
-
-                . You can find that in Qt Creator by going to Projects-> Kit -> Run
-
-            . from resource file
-            . from full path on the local file system
-            . from web url path
-
-        . To load image from resource, you have to :
-            . set(CMAKE_AUTORCC ON)   in your CMakeLists.txt file
-            . use the
-                source: "qrc:/images/LearnQt.png"
-                syntax in your Image element.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

@@ -1,10 +1,5 @@
-/*
-        . Exploring GridView
-        . Shows elements in a Grid
-        . Show layoutDirection and Flow
-        . Take ref from the docs and the Qt5 course.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

@@ -1,20 +1,5 @@
-/*
-        . Getting data from a remote rest api
-        . We use : https://jsonplaceholder.typicode.com/users
-        . The fetching of the data is exactly the same as in the last lecture
-        . Once we get the data we parse it into json :
-            . var object = JSON.parse(response)
-        . And loop through the json array we get from the internet
-        . Adding json objects to the listmodel :
-             .   //Loop over the json object capturing joke data
-                        object.forEach(function(userdata){
-                            mListModelId.append({"userdata" : userdata.name})
-
-                        })
-
-        . Improvise.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Controls

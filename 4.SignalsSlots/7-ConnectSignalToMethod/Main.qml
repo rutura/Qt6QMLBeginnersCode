@@ -1,20 +1,5 @@
-/*
-
-        . Connecting signals to methods
-        . You set up your own function :
-            .         function respond_your_way(message){
-                            console.log("Responding our way;Greeting with message : "+ message)
-                        }
-        . You do the custom connection :
-            .         Component.onCompleted: {
-                            //Make the connection explicitly
-                            rectId.greet.connect(rectId.respond_your_way)
-                        }
-
-         . You have to make a choice as to where  you make the connection. Put
-            it where it makes sense in your project
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

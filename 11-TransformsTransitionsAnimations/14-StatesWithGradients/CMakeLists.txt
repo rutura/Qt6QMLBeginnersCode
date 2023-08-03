@@ -1,3 +1,6 @@
+# Copyright (c) Daniel Gakwaya.
+# SPDX-License-Identifier: MIT
+
 cmake_minimum_required(VERSION 3.16)
 
 project(14-StatesWithGradients VERSION 0.1 LANGUAGES CXX)

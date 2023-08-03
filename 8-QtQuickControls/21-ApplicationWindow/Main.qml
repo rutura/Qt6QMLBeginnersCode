@@ -1,19 +1,5 @@
-/*
-
-    . Exploring ApplicationWindow
-        . Menus and menu items and actions
-        . toolbars and actions
-        . main content : stackView
-        . footer
-
-    . Note : Note: A pop() operation on a stack with
-        depth 1 or 0 does nothing. In such cases, the
-        stack can be emptied using the clear() method.
-
-    . This explains why we see a depth of 2 when we change pages.
-     . Improvise and refer to the Qt 5 course if necessary.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Controls

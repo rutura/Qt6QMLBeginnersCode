@@ -1,3 +1,6 @@
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 .import "utilities2.js" as Utilities2
 
 function greeting()

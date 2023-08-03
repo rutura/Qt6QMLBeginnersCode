@@ -1,19 +1,6 @@
-/*
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
-        . Showing that you can only anchor to parent or sibling items.
-        . We try to anchor topLeftRectId to siblingRect but that won't work :
-                Rectangle {
-                    id : topLeftRectId
-                    width: 100
-                    height: width
-                    color: "magenta"
-
-                    //This anchor won't work because siblingRect isn't either a
-                    //sibling or a parent
-                    anchors.top: siblingRect.bottom
-                }
-
-  */
 import QtQuick
 
 Window {

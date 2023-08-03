@@ -1,14 +1,5 @@
-/*
-
-        . Working with custom componets in QML
-            . We start out by exploring Row and Column
-            . Then we build the button in the main.qml file
-            . We export the button code to its own qml file
-            . Encapsulate some properties as invisible from the outside
-            . Take notes from the Qt 5 course.
-
-  */
-
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

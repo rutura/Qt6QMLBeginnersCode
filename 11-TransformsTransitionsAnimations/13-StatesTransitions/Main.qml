@@ -1,24 +1,5 @@
-/*
-        . Exploring states and transitions.
-
-        . Start out by putting in the components :
-            . skyId
-            . groundId
-            . trees
-            . sunId
-
-        . Put in the states and change them statically in code
-
-        . Put in the states
-            . Change states upon mouse click
-
-        . Put in the transitions verbosely
-
-        . Show the other more general syntax for transitions.
-
-        . Improvise.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

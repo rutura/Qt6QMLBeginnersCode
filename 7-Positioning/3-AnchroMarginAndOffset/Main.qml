@@ -1,21 +1,5 @@
-/*
-
-        . Exploring anchors margins and offsets
-        . Docs : https://doc.qt.io/qt-6/qtquick-positioning-anchors.html#anchor-margins-and-offsets
-
-        . You can set margins to your anchors :
-            . For the margin to work, there needs to be a related anchor already set.
-                if the anchor isn't set, the margin won't work
-            . For example, we have a top anchor set in the centerCenterRectId rectangle,
-                so anchors.topMargin: 10 will work and add a 10 margin on top
-
-            . Notice that the margin affects all elements anchored relative to centerCenterRectId
-
-            . We don't have a right anchor, so the anchors.rightMargin: 10 setting won't work.
-
-            . Next : You can only anchor to parent or sibling.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

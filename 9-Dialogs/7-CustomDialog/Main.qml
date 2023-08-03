@@ -1,18 +1,5 @@
-/*
-        . Showing some custom dialogs you can use even on mobile
-        . Start by running the gallery example and show the dialogs
-            . just like in the Qt 5 course
-        . From there, create a project and steal the code for the
-            custom dialogs and learn from them
-
-        . Change the contentHeight property in the Button for content
-                to not cause binding loops by making it depend on the parent height.
-
-        . The goal here is to help students steal things from Qt examples.
-
-        . Use the info above as a base and improvise.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

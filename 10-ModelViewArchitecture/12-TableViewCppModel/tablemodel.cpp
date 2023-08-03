@@ -1,3 +1,6 @@
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 #include "tablemodel.h"
 
 TableModel::TableModel(QObject *parent) : QAbstractTableModel(parent)

@@ -1,23 +1,5 @@
-/*
-
-
-             . Show how to handle parameters from signals :
-                . The Wf parameters into signal handlers is deprecated. Use JavaScript functions with formal parameters instead warning
-                        console.log(mouse.x)
-                    }
-               . Using explicit js functions  :
-                    onClicked: function(mouse){
-                        console.log(mouse.x)
-                    }
-               . Using arrow functions :
-                    onClicked: (mouse) => console.log(mouse.x)
-
-               . Multiple parameter signals :
-                    . We'll see about that when we know how to setup
-                        custom signals.
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

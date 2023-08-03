@@ -1,9 +1,6 @@
-/*
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
-    . Exploring Range Slider
-    . Use the docs and improvise.
-
-  */
 import QtQuick
 import QtQuick.Controls
 

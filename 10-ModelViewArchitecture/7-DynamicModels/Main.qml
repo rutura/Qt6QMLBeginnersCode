@@ -1,13 +1,5 @@
-/*
-    . Dynamically adding/removing data from the model
-        . append()
-        . clear()
-        . remove()
-        . set()
-
-     . Point to the docs for the student to see other methods they can play with
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

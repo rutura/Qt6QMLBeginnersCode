@@ -1,10 +1,6 @@
-/*
-        . Handling multiple signal parameters :
-                https://doc.qt.io/qt-6/qtqml-syntax-signals.html#signal-parameters
-                    . Handling all parameters
-                    . Handling some parameters
-                    . Can only ignore trailing parameters
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 import QtQuick
 
 Window {

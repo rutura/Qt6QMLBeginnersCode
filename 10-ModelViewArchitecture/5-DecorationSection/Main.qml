@@ -1,12 +1,5 @@
-/*
-    . Exploring how to group list items by criteria
-    . We that by adding a section property in the ListView
-    . Steal the explanations in the Qt5 course and put them
-        in the slides
-
-     . Based on provided info, do improvise.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

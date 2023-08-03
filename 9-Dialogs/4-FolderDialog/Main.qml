@@ -1,9 +1,5 @@
-/*
-        . Used to select folders
-        . Use the doc and improvise
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick.Window
 import QtQuick.Controls

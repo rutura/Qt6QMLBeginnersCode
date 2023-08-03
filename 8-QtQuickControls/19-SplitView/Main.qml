@@ -1,13 +1,5 @@
-/*
-     . Exploring SplitView
-        . This useful only on desktop.
-        . May be you can figure out a usecase for mobile and embedded.
-        . The code here is different from Qt5. Qt6 here insists on providing
-            a preferedwidth. If we don't it defaults to 0 and I don't like that
-            as the rectangles are invisible.
-        . Improvise
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Controls

@@ -1,8 +1,5 @@
-/*
-    .   Exploring colorDialog
-    . Just make sure you use the documentation for QtQuick.Dialogs
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 
 import QtQuick

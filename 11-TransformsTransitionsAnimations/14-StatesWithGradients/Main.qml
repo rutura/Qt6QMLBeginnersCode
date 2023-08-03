@@ -1,35 +1,6 @@
-/*
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
-        . We want to have some gradients applied to the sky and ground.
-
-        . When having gradients that to work with transitions, you don't put a Gradient
-            in a property change like this :
-
-            .                 PropertyChanges {
-                    target: sky
-                    color : "lightblue"
-                    //                    gradient : Gradient {
-                    //                        GradientStop { position: 0.0; color: "#AA80FF" }
-                    //                        GradientStop { position: 1.0; color: "#AACCFF" }
-                    //                    }
-                }
-
-        . Instead you give your gradient stop elements ids and target them
-            in transitions with the desired values :
-
-                .                 PropertyChanges {
-                    target: skyStartColorId
-                    color : "lightblue"
-                }
-                PropertyChanges {
-                    target: skyEndColorId
-                    color : "#EECCFF"
-                }
-
-        . Organize the content very well in the slides
-        . Use the qt 5 course as a ref and improvise to make this as understandable as possible.
-
-  */
 import QtQuick
 import QtQuick.Window
 

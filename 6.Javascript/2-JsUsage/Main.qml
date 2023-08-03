@@ -1,12 +1,5 @@
-/*
-    . Exploring JS usage in QML
-        . Show its usage
-            . in property bindings
-            . in functions
-            . in signal handlers
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

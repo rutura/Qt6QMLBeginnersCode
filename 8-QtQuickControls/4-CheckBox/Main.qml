@@ -1,9 +1,5 @@
-/*
-    . Exploring CheckBox
-    . Giving the user exclusive choices
-    . Start by going through the docs
-    . Improvise on this as it has become second nature to you.
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

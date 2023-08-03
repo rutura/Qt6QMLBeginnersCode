@@ -1,7 +1,9 @@
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QDebug>
-
 
 int main(int argc, char *argv[])
 {

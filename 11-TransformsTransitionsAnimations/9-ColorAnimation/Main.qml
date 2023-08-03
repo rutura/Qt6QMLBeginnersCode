@@ -1,9 +1,5 @@
-/*
-
-        . Exploring ColorAnimation
-
-        . Used to animate changes in color
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

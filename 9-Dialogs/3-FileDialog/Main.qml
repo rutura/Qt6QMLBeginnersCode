@@ -1,21 +1,5 @@
-/*
-        . Exploring FileDialog
-            . The docs
-            . The API has changed from Qt5 to Qt 6
-            . You get the selected file  by going through the selectedFile property.
-            . Use the doc and improvise.
-
-            . Availability : A native platform file dialog is currently
-                    available on the following platforms:
-                       .  iOS
-                       .  Android
-                       .  Linux (when running with the GTK+ platform theme)
-                       .  macOS
-                       .  Windows
-
-            . Mention filters
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick.Window
 import QtQuick.Controls

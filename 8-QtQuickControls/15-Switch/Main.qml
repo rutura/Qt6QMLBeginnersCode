@@ -1,9 +1,5 @@
-/*
-        . Exploring the Switch control
-            . Allows you to turn things on and off
-            . Show it in different styles for the best experience.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Controls

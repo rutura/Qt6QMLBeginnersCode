@@ -1,11 +1,5 @@
-/*
-        . Exploring the usage of the embedded SQLite database
-        . Storing data
-        . Reading data
-        . Showing the location of the database files on the system(main.cpp)
-        . Use the Qt 5 course as a reference and make better slides.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.LocalStorage

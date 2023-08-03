@@ -1,26 +1,5 @@
-/*
-
-    . Exploring the PathView view type
-    . Visualizes data along a path
-    . The elements from the model are spread out uniformly along the path
-    . You specify the path in the path property of the PathView instance
-        . The starting point is (startX, startY)
-        . The curve starts from the starting point and goes to another point
-            specified by a curve type instance such as PathCubic. PathCubic is used
-            to model a bezier curve with two control points. The first control point
-            is closer to the start of the curve
-
-        . Use the Qt Quick Examples - Shapes example to show these curves and mention its use
-            in the book.
-
-    . Draw out the entire path and the control points.
-
-    . Add lots of other colors in the model and show that they will distribute uniformly across
-        the Path
-     . Use the docs and improvise.
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

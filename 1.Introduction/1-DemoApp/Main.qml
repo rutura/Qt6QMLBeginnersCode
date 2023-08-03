@@ -1,7 +1,5 @@
-/*
-        . Test application to test the waters in QML
-  */
-
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

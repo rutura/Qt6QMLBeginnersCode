@@ -1,11 +1,5 @@
-/*
-        . Exploring the TextInput Component :
-            . Allows user to type a single line of text
-            . Handle the editingFinished signal.
-            . Show other signals in the docs
-
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 

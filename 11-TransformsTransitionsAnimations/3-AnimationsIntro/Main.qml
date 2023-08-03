@@ -1,23 +1,5 @@
-/*
-
-        . This section introduces animations
-        . We do that using:
-            . PropertyAnimation on x
-            . NumberAnimation y
-            . RotationAnimation on rotation
-
-       . We set up animations through property value sources:
-            . the syntax NumberAnimation on ...
-
-       . This just we start from somewhere. We'll see targets and other things
-            later on in the chapter.
-
-       . The animation will automatically run
-
-       . We can use a property binding with the running property
-            control when the animation starts.
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window

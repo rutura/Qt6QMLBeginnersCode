@@ -1,3 +1,6 @@
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
+
 import * as Utilities2 from "utilities2.mjs";
 
 export function combineAges(age1,age2){

@@ -1,12 +1,5 @@
-/*
-
-        . Exploring the drawer component
-        . Allows having a menu bar slide in from the left
-            like you see on android.
-        . Show a visual representation of this in the slides
-        . Improvise
-
-  */
+// Copyright (c) Daniel Gakwaya.
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Controls
