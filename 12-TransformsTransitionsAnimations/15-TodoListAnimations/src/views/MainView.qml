@@ -183,6 +183,14 @@ ApplicationWindow {
                                 color: root.completedColor
                                 font.pixelSize: 18
                                 font.weight: Font.Medium
+
+                                // Gentle opacity breathing animation
+                                SequentialAnimation on opacity {
+                                    running: taskListView.count === 0
+                                    loops: Animation.Infinite
+                                    NumberAnimation { from: 0.7; to: 1.0; duration: 1500; easing.type: Easing.InOutSine }
+                                    NumberAnimation { from: 1.0; to: 0.7; duration: 1500; easing.type: Easing.InOutSine }
+                                }
                             }
 
                             Text {
@@ -191,6 +199,15 @@ ApplicationWindow {
                                 color: root.completedColor
                                 font.pixelSize: 14
                                 horizontalAlignment: Text.AlignHCenter
+
+                                // Gentle opacity breathing animation with slight delay
+                                SequentialAnimation on opacity {
+                                    running: taskListView.count === 0
+                                    loops: Animation.Infinite
+                                    PauseAnimation { duration: 300 } // Small delay for staggered effect
+                                    NumberAnimation { from: 0.6; to: 0.9; duration: 1500; easing.type: Easing.InOutSine }
+                                    NumberAnimation { from: 0.9; to: 0.6; duration: 1500; easing.type: Easing.InOutSine }
+                                }
                             }
                         }
                     }
