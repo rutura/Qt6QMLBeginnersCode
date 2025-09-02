@@ -172,8 +172,8 @@ ApplicationWindow {
                                 SequentialAnimation on y {
                                     running: taskListView.count === 0
                                     loops: Animation.Infinite
-                                    NumberAnimation { from: 0; to: -5; duration: 2000; easing.type: Easing.InOutSine }
-                                    NumberAnimation { from: -5; to: 0; duration: 2000; easing.type: Easing.InOutSine }
+                                    NumberAnimation { from: 0; to: -5; duration: 1000; easing.type: Easing.InOutSine }
+                                    NumberAnimation { from: -5; to: 0; duration: 1000; easing.type: Easing.InOutSine }
                                 }
                             }
 
