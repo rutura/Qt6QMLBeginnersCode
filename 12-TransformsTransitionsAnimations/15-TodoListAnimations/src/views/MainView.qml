@@ -112,7 +112,7 @@ ApplicationWindow {
                     displaced: Transition {
                         NumberAnimation {
                             properties: "x,y"
-                            duration: 1200
+                            duration: 200
                             easing.type: Easing.OutQuad
                         }
                     }
@@ -151,6 +151,11 @@ ApplicationWindow {
                         height: 120
                         color: "transparent"
                         visible: taskListView.count === 0
+
+
+                        Behavior on opacity {
+                            NumberAnimation { duration: 400; easing.type: Easing.InOutQuad }
+                        }
 
                         Column {
                             anchors.centerIn: parent
