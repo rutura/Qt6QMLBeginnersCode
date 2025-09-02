@@ -85,13 +85,13 @@ ApplicationWindow {
                         NumberAnimation {
                             properties: "x"
                             from: 100; to: 0
-                            duration: 1300
+                            duration: 300
                             easing.type: Easing.OutCubic
                         }
                         NumberAnimation {
                             property: "opacity"
                             from: 0; to: 1
-                            duration: 1300
+                            duration: 300
                         }
                     }
 
@@ -99,20 +99,20 @@ ApplicationWindow {
                         NumberAnimation {
                             properties: "x"
                             to: 100
-                            duration: 1250
+                            duration: 250
                             easing.type: Easing.InCubic
                         }
                         NumberAnimation {
                             property: "opacity"
                             to: 0
-                            duration: 1250
+                            duration: 250
                         }
                     }
 
                     displaced: Transition {
                         NumberAnimation {
                             properties: "x,y"
-                            duration: 200
+                            duration: 1200
                             easing.type: Easing.OutQuad
                         }
                     }
