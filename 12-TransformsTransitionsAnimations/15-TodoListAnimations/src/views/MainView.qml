@@ -151,6 +151,7 @@ ApplicationWindow {
                         height: 120
                         color: "transparent"
                         visible: taskListView.count === 0
+                        opacity: taskListView.count === 0 ? 1.0 : 0.0
 
 
                         Behavior on opacity {
@@ -166,6 +167,14 @@ ApplicationWindow {
                                 text: "📝"
                                 font.pixelSize: 48
                                 opacity: 0.3
+
+                                // Subtle floating animation
+                                SequentialAnimation on y {
+                                    running: taskListView.count === 0
+                                    loops: Animation.Infinite
+                                    NumberAnimation { from: 0; to: -5; duration: 2000; easing.type: Easing.InOutSine }
+                                    NumberAnimation { from: -5; to: 0; duration: 2000; easing.type: Easing.InOutSine }
+                                }
                             }
 
                             Text {
