@@ -30,6 +30,7 @@ qt_add_qml_module(TodoList
 
         # Utils
         src/utils/TaskStorage.qml
+        QML_FILES src/utils/RestStorage.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
