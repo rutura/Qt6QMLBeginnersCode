@@ -9,6 +9,9 @@ ApplicationWindow {
     visible: true
     title: qsTr("My Tasks")
 
+
+    property bool isInitializing: true
+
     // Theme properties
     property bool darkMode: false
     property color backgroundColor: darkMode ? "#1e1e1e" : "#f0f2f5"
@@ -38,13 +41,16 @@ ApplicationWindow {
         onSettingsLoaded: function(darkModeValue) {
             console.log("Dark mode loaded from API:", darkModeValue)
             root.darkMode = darkModeValue
+            root.isInitializing = false
         }
 
     }
 
     // Save dark mode preference when changed
     onDarkModeChanged: {
-        taskModel.saveDarkMode(darkMode)
+        if(!root.isInitializing){
+            taskModel.saveDarkMode(darkMode)
+        }
     }
 
 
