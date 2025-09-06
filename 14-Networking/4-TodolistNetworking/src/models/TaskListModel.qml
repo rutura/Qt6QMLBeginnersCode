@@ -6,6 +6,9 @@ Item {
     // Signal emitted when storage is initialized and ready
     signal storageInitialized()
 
+    // Signal emitted when settings are loaded
+    signal settingsLoaded(bool darkMode)
+
     // The actual ListModel for tasks
     property alias model: taskListModel
     property alias count: taskListModel.count
@@ -61,6 +64,17 @@ Item {
                     break
                 }
             }
+        }
+
+        onSettingsLoaded: function(settings) {
+            console.log("Settings loaded:", JSON.stringify(settings))
+            // Emit signal with dark mode value
+            root.settingsLoaded(settings.darkMode || false)
+        }
+
+        onSettingsUpdated: function(settings) {
+            console.log("Settings updated:", JSON.stringify(settings))
+            // Settings have been successfully updated
         }
 
 
@@ -265,15 +279,19 @@ Item {
 
     // Access to storage for dark mode preference
     function saveDarkMode(darkMode) {
+
+        storage.updateSettings({ darkMode: darkMode })
         /*
         storage.saveDarkMode(darkMode)
         */
     }
 
     function loadDarkMode() {
+
+        storage.loadSettings()
         /*
         return storage.loadDarkMode()
         */
-        return false
+        //return false
     }
 }

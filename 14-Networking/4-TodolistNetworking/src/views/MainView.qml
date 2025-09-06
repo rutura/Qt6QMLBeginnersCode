@@ -31,8 +31,15 @@ ApplicationWindow {
 
         // Connect to storage ready signal to load dark mode
         onStorageInitialized: {
-            root.darkMode = loadDarkMode()
+            loadDarkMode()
         }
+
+        // Handle settings loaded from REST API
+        onSettingsLoaded: function(darkModeValue) {
+            console.log("Dark mode loaded from API:", darkModeValue)
+            root.darkMode = darkModeValue
+        }
+
     }
 
     // Save dark mode preference when changed

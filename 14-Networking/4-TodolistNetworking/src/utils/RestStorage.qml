@@ -115,6 +115,42 @@ Item{
         })
     }
 
+    // Load user settings
+     function loadSettings() {
+         performRequest("GET", "/api/settings", null, function(response) {
+             try {
+                 let data = JSON.parse(response)
+                 let settings = data.data
+                 console.log("Settings loaded from API")
+                 root.settingsLoaded(settings)
+             } catch (e) {
+                 console.error("Error parsing settings response:", e)
+                 root.error("Failed to parse settings data")
+             }
+         }, function(error) {
+             console.error("Error loading settings:", error)
+             root.error("Failed to load settings from server")
+         })
+     }
+
+     // Update user settings
+     function updateSettings(settings) {
+         performRequest("PUT", "/api/settings", settings, function(response) {
+             try {
+                 let data = JSON.parse(response)
+                 let updatedSettings = data.data
+                 console.log("Settings updated")
+                 root.settingsUpdated(updatedSettings)
+             } catch (e) {
+                 console.error("Error parsing update settings response:", e)
+                 root.error("Failed to parse server response")
+             }
+         }, function(error) {
+             console.error("Error updating settings:", error)
+             root.error("Failed to update settings")
+         })
+     }
+
 
 
     // Generic HTTP request function
