@@ -1,0 +1,57 @@
+# Qt QML Language Server configuration
+qmlls.ini
+
+# Build directories
+build/
+Desktop_Qt_6_9_0_MinGW_64_bit-Debug/
+
+# Qt Creator user settings
+CMakeLists.txt.user
+
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Qt-specific
+*.qm
+*.prl
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile*
+*build-*
+
+# QML cache and compiled files
+*.qmlc
+*.jsc
+
+# Qt temporary files
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
